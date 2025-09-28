@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Postulacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PostulacionID>14624</PostulacionID>
+  <TipoRegistro>1</TipoRegistro>
+  <GrupoComprobante>31,32,33,34,41,43,44,45,46,47</GrupoComprobante>
+  <Contribuyente>
+    <RNCContribuyente>124000000</RNCContribuyente>
+    <RazonSocial>NOVATECH SRL</RazonSocial>
+    <NombreComercial>NOVATECH</NombreComercial>
+    <ActividadEconomica>SERVICIOS TECNOLÓGICOS Y DE INFORMÁTICA</ActividadEconomica>
+    <Telefono>8097322702</Telefono>
+    <Direccion>CARLOS PEREZ RICARD ARROYO HONDO 2</Direccion>
+    <Provincia>DISTRITO NACIONAL</Provincia>
+    <Municipio></Municipio>
+    <Sector>ARROYO HONDO</Sector>
+    <CorreoElectronico>INFO@NOVATECHINT.COM</CorreoElectronico>
+  </Contribuyente>
+  <Representante>
+    <RNCRepresentante>00100000000</RNCRepresentante>
+    <NombreRepresentante>ATINA DE CASTRO</NombreRepresentante>
+    <DireccionRepresentante>CARLOS PEREZ RICARD ARROYO HONDO 2 </DireccionRepresentante>
+    <ProvinciaRepresentante>DISTRITO NACIONAL</ProvinciaRepresentante>
+    <SectorRepresentante>ARROYO HONDO</SectorRepresentante>
+    <CorreoElectronicoRepresentante>adecastro@novatechint.com</CorreoElectronicoRepresentante>
+  </Representante>
+  <Software>
+    <TipoDesarrollo>0</TipoDesarrollo>
+    <NombreSoftware>Adm Cloud</NombreSoftware>
+    <UrlRecepcion>api.polarisedi.com/124000000/certecf</UrlRecepcion>
+    <UrlAprobacionComercial>api.polarisedi.com/124000000/certecf</UrlAprobacionComercial>
+    <VersionSoftware>1</VersionSoftware>
+    <Proveedor>
+      <RNCProveedor>124005132</RNCProveedor>
+      <RazonSocialProveedor>FORTECH SRL</RazonSocialProveedor>
+      <NombreComercialProveedor>FORTECH</NombreComercialProveedor>
+    </Proveedor>
+  </Software>
+  <FechaSolicitud>2025-09-28T14:11:40.3706586-04:00</FechaSolicitud>
+</Postulacion>
