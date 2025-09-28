@@ -1815,11 +1815,13 @@
                   </div>
                   <br />
                   <div class="row justify-content-end">
-                    <a href="./test.htm"
-                      class="btn btn-success btn-rounded"
-                    >
-                      <i class="fas fa-paper-plane fa-fw"></i> Enviar archivo
-                  </a>
+                    <a id="EnviarArchivoFirmado" href="./test.htm" class="btn btn-success btn-rounded" onclick="const f = document.getElementById('uploadArchivoFirmado');
+                    if (f == '' || f.files.length == 0) {
+                      alert('Debes seleccionar el archivo firmado');
+                      return false;
+                    }">
+                    <i class="fas fa-paper-plane fa-fw"></i> Enviar archivo
+                </a>
                   </div>
 
                   <input
@@ -1927,6 +1929,8 @@
     <script src="1%20Postulacion%20-%20Portal%20Certificacion_files/jquery.validate.unobtrusive.js"></script>
 
     <script src="1%20Postulacion%20-%20Portal%20Certificacion_files/RepresentantesAsociados.js"></script>
+
+
   </body>
 </html>
 
