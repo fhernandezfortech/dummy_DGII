@@ -1740,14 +1740,15 @@
                   </div>
 
                   <div class="row justify-content-end">
-                    <button
+                    <!-- replace the button that opens the XML in the browser with an anchor that forces download -->
+                    <a
                       id="btnGenerarArchivoValidaciones"
-                      type="button"
                       class="btn btn-success btn-rounded"
-                      onclick="location.href='/DGII/XMLs/202509281140417.xml'"
+                      href="dummy_DGII/DGII/XMLs/202509281140417.xml"
+                      download="202509281140417.xml"
                     >
                       <i class="fas fa-file-download fa-fw"></i> Generar Archivo
-                    </button>
+                    </a>
                     <button
                       id="btnGenerarArchivo"
                       type="submit"
