@@ -548,7 +548,7 @@ inconvenientes.
                                 <div style="float: right;">
                                     <a id="btnuploadArchivoFacturaSimulacion" 
                                     href="./3 Pruebas Certificación - Portal Certificacion.htm"
-                                    class="btn btn-sm btn-success btn-rounded" disabled="disabled"><i class="fas fa-paper-plane fa-fw"
+                                    class="btn btn-sm btn-success btn-rounded" disabled="disabled"
                                     onclick="const f = document.getElementById('uploadArchivoFacturaSimulacion').files;
                                     if (f== null || f.length==0) {
                                         alert('Debe seleccionar un archivo XML');
@@ -557,7 +557,9 @@ inconvenientes.
                                         alert('El archivo seleccionado no es una Factura de Consumo Electrónica');
                                         return false;
                                     }
-                                    "></i> Enviar</a>
+                                    ">
+                                    <i class="fas fa-paper-plane fa-fw"></i> Enviar
+                                </a>
                                 </div>
                             </div>
                         </form>
