@@ -1819,7 +1819,12 @@
                     if (f == '' || f.files.length == 0) {
                       alert('Debes seleccionar el archivo firmado');
                       return false;
-                    }">
+                    } else if (!f.files[0].name.includes('signed')) {
+                      alert('El archivo seleccionado no es un archivo firmado');
+                      return false;
+                    }
+                    
+                    ">
                     <i class="fas fa-paper-plane fa-fw"></i> Enviar archivo
                 </a>
                   </div>
