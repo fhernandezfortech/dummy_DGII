@@ -1127,15 +1127,19 @@
                             "ECF_47",
                             "ECF_32 Menor_250mil",
                           ];
+
                           for (const name of fileNames) {
                             const inputs = document.getElementsByName(name);
                             let hasFile = false;
+                            let file = null;
                             for (const input of inputs) {
                               if (input.files && input.files.length > 0) {
                                 hasFile = true;
+                                file = input.files[0];
                                 break;
                               }
                             }
+
                             if (!hasFile) {
                               alert(
                                 `Debe seleccionar el archivo para el comprobante tipo ${name.substring(
@@ -1143,6 +1147,19 @@
                                 )}`
                               );
                               return false;
+                            }
+
+                            // additional filename validation for ECF_32 types:
+                            if (name.indexOf("ECF_32") === 0 && file) {
+                              const fname = (file.name || "").toLowerCase();
+                              if (!fname.includes("e32")) {
+                                alert(
+                                  `El archivo para el comprobante tipo ${name.substring(
+                                    4
+                                  )} debe ser tipo "E32".`
+                                );
+                                return false;
+                              }
                             }
                           }
                           return true;
