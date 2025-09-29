@@ -1107,11 +1107,47 @@
                     <div class="row justify-content-end">
                       <a
                         href="./4 Pruebas Certificación - Portal Certificacion.htm"
+                        onclick="return validateFiles();"
                         class="btn btn-success btn-rounded"
                       >
-                        <i class="fas fa-paper-plane fa-fw"></i> Enviar
-                        archivos</a
-                      >
+                        <i class="fas fa-paper-plane fa-fw"></i> Enviar archivos
+                      </a>
+                      <script>
+                        function validateFiles() {
+                          const fileNames = [
+                            "ECF_31",
+                            "ECF_32 Mayor_o_Igual_250mil",
+                            "ECF_33",
+                            "ECF_34",
+                            "ECF_41",
+                            "ECF_43",
+                            "ECF_44",
+                            "ECF_45",
+                            "ECF_46",
+                            "ECF_47",
+                            "ECF_32 Menor_250mil",
+                          ];
+                          for (const name of fileNames) {
+                            const inputs = document.getElementsByName(name);
+                            let hasFile = false;
+                            for (const input of inputs) {
+                              if (input.files && input.files.length > 0) {
+                                hasFile = true;
+                                break;
+                              }
+                            }
+                            if (!hasFile) {
+                              alert(
+                                `Debe seleccionar el archivo para el comprobante tipo ${name.substring(
+                                  4
+                                )}`
+                              );
+                              return false;
+                            }
+                          }
+                          return true;
+                        }
+                      </script>
                     </div>
 
                     <input
