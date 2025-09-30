@@ -739,29 +739,29 @@
                   <form id="frmGuardarFacturaConsumoSimulacion" enctype="multipart/form-data" style="height: 7.2rem">
                     <div id="boxCargarFacturaConsumoSimulacion" class="card-body">
                       <div class="custom-file">
-                        <input id="uploadArchivoFacturaSimulacion" onclick="document.querySelectorAll('.card-text .statusNumbers').forEach((b, i) => {
-                          setTimeout(() => {
-                            b.textContent = b.textContent.replace('0/1', '1/1');
-                          }, (i + 1) * 5000);
-                        });
-                        " type="file" name="uploadArchivoFacturaSimulacion" class="form-control custom-file-input"
-                          accept="application/xml" />
+                        <input id="uploadArchivoFacturaSimulacion" type="file" name="uploadArchivoFacturaSimulacion"
+                          class="form-control custom-file-input" accept="application/xml" />
                         <label class="custom-file-label">Elegir archivo</label>
                       </div>
                       <div style="float: right">
                         <a id="btnuploadArchivoFacturaSimulacion"
                           href="./3 Pruebas Certificación - Portal Certificacion.htm"
-                          class="btn btn-sm btn-success btn-rounded" disabled="disabled" onclick="const f = document.getElementById('uploadArchivoFacturaSimulacion').files;
-                                    if (f== null || f.length==0) {
-                                        alert('Debe seleccionar un archivo XML');
-                                        return false;
-                                    } else if (!f[0].name.includes('E320')) {
-                                        alert('El archivo seleccionado no es una Factura de Consumo Electrónica');
-                                        return false;
-                                    }
+                          class="btn btn-sm btn-success btn-rounded" disabled="disabled" onclick="
+                            const f = document.getElementById('uploadArchivoFacturaSimulacion').files;
+                            if (!f || f.length === 0) { alert('Debe seleccionar un archivo XML'); return false; }
+                            if (!f[0].name.includes('E320')) { alert('El archivo seleccionado no es una Factura de Consumo Electrónica'); return false; }
 
-                                    
-                                    ">
+                            // staggered UI updates
+                            const nodes = document.querySelectorAll('.card-text .statusNumbers');
+                            nodes.forEach((b, i) => {
+                              setTimeout(() => { b.textContent = b.textContent.replace('0/1','1/1'); }, (i + 1) * 5000);
+                            });
+
+                            // navigate after updates finish (ensure timers get to run)
+                            const navDelay = Math.max(2500, nodes.length * 5000 + 500);
+                            setTimeout(function(){ window.location.href = './3 Pruebas Certificación - Portal Certificacion.htm'; }, navDelay);
+                            return false;
+                          ">
                           <i class="fas fa-paper-plane fa-fw"></i> Enviar
                         </a>
                       </div>
