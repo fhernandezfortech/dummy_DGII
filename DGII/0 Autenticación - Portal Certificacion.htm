@@ -1,337 +1,228 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Autenticación - Portal Certificacion</title>
 
-    <!-- FA5 example -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autenticación - Portal Certificacion</title>
 
-    <link
-      rel="stylesheet"
-      href="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/bootstrap.css"
-    />
+  <!-- FA5 example -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
-    <link
-      rel="stylesheet"
-      href="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/site.css"
-    />
-    <script>
-      NS_CSM_td = 506644757;
-      NS_CSM_pd = 275116665;
-      NS_CSM_u = "/clm10";
-      NS_CSM_col = "af_collector_logstream_172.16.170.101";
-    </script>
-    <script type="text/javascript">
-      function sendTimingInfoInit() {
-        setTimeout(sendTimingInfo, 0);
-      }
-      function sendTimingInfo() {
-        var wp = window.performance;
-        if (wp) {
-          var c1, c2, t;
-          c1 = wp.timing;
-          if (c1) {
-            var cm = {};
-            cm.ns = c1.navigationStart;
-            if ((t = c1.unloadEventStart) > 0) cm.us = t;
-            if ((t = c1.unloadEventEnd) > 0) cm.ue = t;
-            if ((t = c1.redirectStart) > 0) cm.rs = t;
-            if ((t = c1.redirectEnd) > 0) cm.re = t;
-            cm.fs = c1.fetchStart;
-            cm.dls = c1.domainLookupStart;
-            cm.dle = c1.domainLookupEnd;
-            cm.cs = c1.connectStart;
-            cm.ce = c1.connectEnd;
-            if ((t = c1.secureConnectionStart) > 0) cm.scs = t;
-            cm.rqs = c1.requestStart;
-            cm.rss = c1.responseStart;
-            cm.rse = c1.responseEnd;
-            cm.dl = c1.domLoading;
-            cm.di = c1.domInteractive;
-            cm.dcls = c1.domContentLoadedEventStart;
-            cm.dcle = c1.domContentLoadedEventEnd;
-            cm.dc = c1.domComplete;
-            if ((t = c1.loadEventStart) > 0) cm.ls = t;
-            if ((t = c1.loadEventEnd) > 0) cm.le = t;
-            cm.tid = NS_CSM_td;
-            cm.pid = NS_CSM_pd;
-            cm.ac = NS_CSM_col;
-            var xhttp = new XMLHttpRequest();
-            if (xhttp) {
-              var JSON = JSON || {};
-              JSON.stringify =
-                JSON.stringify ||
-                function (ob) {
-                  var t = typeof ob;
-                  if (t != "object" || ob === null) {
-                    if (t == "string") ob = '"' + ob + '"';
-                    return String(ob);
-                  } else {
-                    var n,
-                      v,
-                      json = [],
-                      arr = ob && ob.constructor == Array;
-                    for (n in ob) {
-                      v = ob[n];
-                      t = typeof v;
-                      if (t == "string") v = '"' + v + '"';
-                      else if (t == "object" && v !== null)
-                        v = JSON.stringify(v);
-                      json.push((arr ? "" : '"' + n + '":') + String(v));
-                    }
-                    return (arr ? "[" : "{") + String(json) + (arr ? "]" : "}");
+  <link rel="stylesheet" href="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/bootstrap.css" />
+
+  <link rel="stylesheet" href="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/all.css" />
+  <link rel="stylesheet" href="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/site.css" />
+  <script>
+    NS_CSM_td = 506644757;
+    NS_CSM_pd = 275116665;
+    NS_CSM_u = "/clm10";
+    NS_CSM_col = "af_collector_logstream_172.16.170.101";
+  </script>
+  <script type="text/javascript">
+    function sendTimingInfoInit() {
+      setTimeout(sendTimingInfo, 0);
+    }
+    function sendTimingInfo() {
+      var wp = window.performance;
+      if (wp) {
+        var c1, c2, t;
+        c1 = wp.timing;
+        if (c1) {
+          var cm = {};
+          cm.ns = c1.navigationStart;
+          if ((t = c1.unloadEventStart) > 0) cm.us = t;
+          if ((t = c1.unloadEventEnd) > 0) cm.ue = t;
+          if ((t = c1.redirectStart) > 0) cm.rs = t;
+          if ((t = c1.redirectEnd) > 0) cm.re = t;
+          cm.fs = c1.fetchStart;
+          cm.dls = c1.domainLookupStart;
+          cm.dle = c1.domainLookupEnd;
+          cm.cs = c1.connectStart;
+          cm.ce = c1.connectEnd;
+          if ((t = c1.secureConnectionStart) > 0) cm.scs = t;
+          cm.rqs = c1.requestStart;
+          cm.rss = c1.responseStart;
+          cm.rse = c1.responseEnd;
+          cm.dl = c1.domLoading;
+          cm.di = c1.domInteractive;
+          cm.dcls = c1.domContentLoadedEventStart;
+          cm.dcle = c1.domContentLoadedEventEnd;
+          cm.dc = c1.domComplete;
+          if ((t = c1.loadEventStart) > 0) cm.ls = t;
+          if ((t = c1.loadEventEnd) > 0) cm.le = t;
+          cm.tid = NS_CSM_td;
+          cm.pid = NS_CSM_pd;
+          cm.ac = NS_CSM_col;
+          var xhttp = new XMLHttpRequest();
+          if (xhttp) {
+            var JSON = JSON || {};
+            JSON.stringify =
+              JSON.stringify ||
+              function (ob) {
+                var t = typeof ob;
+                if (t != "object" || ob === null) {
+                  if (t == "string") ob = '"' + ob + '"';
+                  return String(ob);
+                } else {
+                  var n,
+                    v,
+                    json = [],
+                    arr = ob && ob.constructor == Array;
+                  for (n in ob) {
+                    v = ob[n];
+                    t = typeof v;
+                    if (t == "string") v = '"' + v + '"';
+                    else if (t == "object" && v !== null)
+                      v = JSON.stringify(v);
+                    json.push((arr ? "" : '"' + n + '":') + String(v));
                   }
-                };
-              xhttp.open("POST", NS_CSM_u, true);
-              xhttp.send(JSON.stringify(cm));
-            }
+                  return (arr ? "[" : "{") + String(json) + (arr ? "]" : "}");
+                }
+              };
+            xhttp.open("POST", NS_CSM_u, true);
+            xhttp.send(JSON.stringify(cm));
           }
         }
       }
-      if (window.addEventListener)
-        window.addEventListener("load", sendTimingInfoInit, false);
-      else if (window.attachEvent)
-        window.attachEvent("onload", sendTimingInfoInit);
-      else window.onload = sendTimingInfoInit;
+    }
+    if (window.addEventListener)
+      window.addEventListener("load", sendTimingInfoInit, false);
+    else if (window.attachEvent)
+      window.attachEvent("onload", sendTimingInfoInit);
+    else window.onload = sendTimingInfoInit;
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container top-bar text-right">
+      <span class="top-networks-container">
+        <a href="https://www.instagram.com/dgii.rd/?hl=es" class="top-network-link" id="iconInstagram"
+          target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/dgii" class="top-network-link" id="iconTwitter" target="_blank"><i
+            class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/pages/Direcci%C3%B3n-General-de-Impuestos-Internos/134820919865362"
+          class="top-network-link" id="iconFacebook" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.linkedin.com/company/direccion-general-de-impuestos-internos-dgii-/"
+          class="top-network-link" id="iconLinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/user/DGIIRD" class="top-network-link" id="iconYoutube" target="_blank"><i
+            class="fab fa-youtube"></i></a>
+      </span>
+      <span class="top-links-container">
+        <a href="https://ayuda.dgii.gov.do/" class="btn btn-outline-success btn-sm btn-rounded btn-top-link"
+          id="btnComunidadAyuda" target="_blank">Comunidad Ayuda</a>
+        <a href="https://dgii.gov.do/denuncias" class="btn btn-outline-success btn-sm btn-rounded btn-top-link"
+          id="btnDenuncias" target="_blank">Denuncias</a>
+        <a href="https://www.dgii.gov.do/ofv/login.aspx" class="btn btn-success btn-sm btn-rounded btn-top-link"
+          id="btnOficinaVirtual" target="_blank">Oficina Virtual</a>
+      </span>
+      <span class="rd-goverment-logo-container">
+        <img src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/gob_rep_dom.png" class="rd-goverment-logo"
+          alt="Gobierno de la República Dominicana" />
+      </span>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+      <div class="container">
+        <a class="navbar-brand"
+          href=https://fhernandezfortech.github.io/dummy_DGII/DGII/0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion.htm>
+          <img src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/dgii_logo.png" class="logo-navbar"
+            alt="Portal Certificación" />
+          <br />
+          <kbd>Certificación Facturación Electrónica</kbd>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div id="cookieConsent" class="alert alert-info alert-dismissible fade show" role="alert">
+      <p>
+        Este sitio utiliza las cookies del navegador para su correcto
+        funcionamiento. Por favor realizar clic en Aceptar para confirmar.
+      </p>
+      <button type="button" class="accept-policy close" data-dismiss="alert" aria-label="Close"
+        data-cookie-string=".AspNet.Consent=yes; expires=Sat, 26 Sep 2026 23:07:05 GMT; path=/; secure; samesite=strict">
+        <span aria-hidden="true">Aceptar</span>
+      </button>
+    </div>
+    <script>
+      (function () {
+        var button = document.querySelector(
+          "#cookieConsent button[data-cookie-string]"
+        );
+        button.addEventListener(
+          "click",
+          function (event) {
+            document.cookie = button.dataset.cookieString;
+          },
+          false
+        );
+      })();
     </script>
-  </head>
-  <body>
-    <header>
-      <div class="container top-bar text-right">
-        <span class="top-networks-container">
-          <a
-            href="https://www.instagram.com/dgii.rd/?hl=es"
-            class="top-network-link"
-            id="iconInstagram"
-            target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://twitter.com/dgii"
-            class="top-network-link"
-            id="iconTwitter"
-            target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/pages/Direcci%C3%B3n-General-de-Impuestos-Internos/134820919865362"
-            class="top-network-link"
-            id="iconFacebook"
-            target="_blank"
-            ><i class="fab fa-facebook-square"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/company/direccion-general-de-impuestos-internos-dgii-/"
-            class="top-network-link"
-            id="iconLinkedin"
-            target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://www.youtube.com/user/DGIIRD"
-            class="top-network-link"
-            id="iconYoutube"
-            target="_blank"
-            ><i class="fab fa-youtube"></i
-          ></a>
-        </span>
-        <span class="top-links-container">
-          <a
-            href="https://ayuda.dgii.gov.do/"
-            class="btn btn-outline-success btn-sm btn-rounded btn-top-link"
-            id="btnComunidadAyuda"
-            target="_blank"
-            >Comunidad Ayuda</a
-          >
-          <a
-            href="https://dgii.gov.do/denuncias"
-            class="btn btn-outline-success btn-sm btn-rounded btn-top-link"
-            id="btnDenuncias"
-            target="_blank"
-            >Denuncias</a
-          >
-          <a
-            href="https://www.dgii.gov.do/ofv/login.aspx"
-            class="btn btn-success btn-sm btn-rounded btn-top-link"
-            id="btnOficinaVirtual"
-            target="_blank"
-            >Oficina Virtual</a
-          >
-        </span>
-        <span class="rd-goverment-logo-container">
-          <img
-            src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/gob_rep_dom.png"
-            class="rd-goverment-logo"
-            alt="Gobierno de la República Dominicana"
-          />
-        </span>
-      </div>
-      <nav
-        class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
-      >
-        <div class="container">
-          <a
-            class="navbar-brand"
-            href=https://fhernandezfortech.github.io/dummy_DGII/DGII/0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion.htm
-          >
-            <img
-              src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/dgii_logo.png"
-              class="logo-navbar"
-              alt="Portal Certificación"
-            />
-            <br />
-            <kbd>Certificación Facturación Electrónica</kbd>
-          </a>
-        </div>
-      </nav>
-    </header>
-    <div class="container">
-      <div
-        id="cookieConsent"
-        class="alert alert-info alert-dismissible fade show"
-        role="alert"
-      >
-        <p>
-          Este sitio utiliza las cookies del navegador para su correcto
-          funcionamiento. Por favor realizar clic en Aceptar para confirmar.
+
+    <main role="main" class="pb-3">
+      <style>
+        .welcomeTitle {
+          color: #1c7d32;
+          font-weight: bold;
+          font-size: 2.1rem !important;
+        }
+      </style>
+
+      <div class="container">
+        <p class="welcomeTitle lead text-center">
+          ¡Bienvenidos al Portal de Certificación de Facturación Electrónica!
         </p>
-        <button
-          type="button"
-          class="accept-policy close"
-          data-dismiss="alert"
-          aria-label="Close"
-          data-cookie-string=".AspNet.Consent=yes; expires=Sat, 26 Sep 2026 23:07:05 GMT; path=/; secure; samesite=strict"
-        >
-          <span aria-hidden="true">Aceptar</span>
-        </button>
-      </div>
-      <script>
-        (function () {
-          var button = document.querySelector(
-            "#cookieConsent button[data-cookie-string]"
-          );
-          button.addEventListener(
-            "click",
-            function (event) {
-              document.cookie = button.dataset.cookieString;
-            },
-            false
-          );
-        })();
-      </script>
-
-      <main role="main" class="pb-3">
-        <style>
-          .welcomeTitle {
-            color: #1c7d32;
-            font-weight: bold;
-            font-size: 2.1rem !important;
-          }
-        </style>
-
-        <div class="container">
-          <p class="welcomeTitle lead text-center">
-            ¡Bienvenidos al Portal de Certificación de Facturación Electrónica!
-          </p>
-          <hr />
-          <div class="card card-login mx-auto mt-5">
-            <div class="card-header">
-              Favor ingrese sus credenciales para continuar
-            </div>
-            <div class="card-body">
-              <form
-                method="get"
-                id="formularioLogin"
-                action="./0.5 Inicio - Portal Certificacion.htm"
-              >
-                <div class="form-group">
-                  <div class="form-label-group">
-                    <label for="inputRnc">RNC/Cédula</label>
-                    <input
-                      type="text"
-                      id="inputUserName"
-                      name="username"
-                      class="form-control"
-                      placeholder="RNC/Cédula"
-                      required="required"
-                      autofocus="autofocus"
-                      oninput="this.value = this.value.replace(/[^0-9]/g, '');"
-                      value="124000000"
-                    />
-                  </div>
+        <hr />
+        <div class="card card-login mx-auto mt-5">
+          <div class="card-header">
+            Favor ingrese sus credenciales para continuar
+          </div>
+          <div class="card-body">
+            <form method="get" id="formularioLogin" action="./0.5 Inicio - Portal Certificacion.htm">
+              <div class="form-group">
+                <div class="form-label-group">
+                  <label for="inputRnc">RNC/Cédula</label>
+                  <input type="text" id="inputUserName" name="username" class="form-control" placeholder="RNC/Cédula"
+                    required="required" autofocus="autofocus" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                    value="124000000" />
                 </div>
-                <div class="form-group">
-                  <div class="form-label-group">
-                    <label for="inputPassword">Contraseña</label>
-                    <input
-                      type="password"
-                      id="inputClave"
-                      name="password"
-                      class="form-control"
-                      placeholder="Contraseña"
-                      required="required"
-                      autocomplete="off"
-                    />
-                  </div>
-                </div>
-                <button
-                  onclick="location.href=''"
-                  class="btn btn-outline-success btn-rounded btn-block"
-                  id="btningresar"
-                >
-                  <i class="fas fa-lock fa-fw"></i> Ingresar
-                </button>
-
-                <input
-                  name="__RequestVerificationToken"
-                  type="hidden"
-                  value="CfDJ8HW6uwko4x9Nvs8khcRhUIaTrPPIistjyCAFn4wUL7pXMFJm2qPX0Z9v96ascMlNda9yeYi_FTgdr91o2pqXM2m3HiCx-TD4H7h5IxGwyFW4yHQ6Bpr8mpJBMPTmHHoyOapiAa4Sm9iQz7fs-8v-KCQ"
-                />
-              </form>
-              <br />
-
-              <div class="text-center">
-                <a
-                  class="d-block small text-success"
-                  href="#"
-                  data-target="#modalOlvidoClave"
-                  data-toggle="modal"
-                  id="enlOlvidoClave"
-                  >¿Has olvidado tu contraseña?</a
-                >
               </div>
+              <div class="form-group">
+                <div class="form-label-group">
+                  <label for="inputPassword">Contraseña</label>
+                  <input type="password" id="inputClave" name="password" class="form-control" placeholder="Contraseña"
+                    required="required" autocomplete="off" />
+                </div>
+              </div>
+              <button onclick="location.href=''" class="btn btn-outline-success btn-rounded btn-block" id="btningresar">
+                <i class="fas fa-lock fa-fw"></i> Ingresar
+              </button>
+
+              <input name="__RequestVerificationToken" type="hidden"
+                value="CfDJ8HW6uwko4x9Nvs8khcRhUIaTrPPIistjyCAFn4wUL7pXMFJm2qPX0Z9v96ascMlNda9yeYi_FTgdr91o2pqXM2m3HiCx-TD4H7h5IxGwyFW4yHQ6Bpr8mpJBMPTmHHoyOapiAa4Sm9iQz7fs-8v-KCQ" />
+            </form>
+            <br />
+
+            <div class="text-center">
+              <a class="d-block small text-success" href="#" data-target="#modalOlvidoClave" data-toggle="modal"
+                id="enlOlvidoClave">¿Has olvidado tu contraseña?</a>
             </div>
           </div>
         </div>
+      </div>
 
-        <!--modal-->
-        <div
-          id="modalOlvidoClave"
-          class="modal fade"
-          tabindex="-1"
-          role="dialog"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="container">
-                  <div class="text-center">
-                    <h4 class="d-block">Restablecer contraseña</h4>
-                  </div>
-                  <button
-                    id="btnCerrarModal"
-                    type="button"
-                    class="close"
-                    aria-label="Cerrar"
-                    style="
+      <!--modal-->
+      <div id="modalOlvidoClave" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="container">
+                <div class="text-center">
+                  <h4 class="d-block">Restablecer contraseña</h4>
+                </div>
+                <button id="btnCerrarModal" type="button" class="close" aria-label="Cerrar" style="
                       padding-bottom: 0px;
                       padding-top: 0px;
                       padding-right: 0px;
@@ -339,62 +230,42 @@
                       margin-bottom: 0px;
                       margin-top: 0px;
                       margin-right: 0px;
-                    "
-                  >
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
+                    ">
+                  <span aria-hidden="true">×</span>
+                </button>
               </div>
-              <div class="modal-body">
-                <div class="col-md-12">
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                      <div class="text-center">
-                        <p>
-                          Si ha olvidado su contraseña, por favor ingrese su
-                          identificación como contribuyente para restablecerla
-                        </p>
-                        <div class="panel-body">
-                          <form
-                            id="formularioOlvidoClave"
-                            method="post"
-                            action="/certecf/portalcertificacion/Login/OlvidoClave"
-                          >
-                            <fieldset>
-                              <div class="form-group">
-                                <input
-                                  class="form-control input-lg"
-                                  placeholder="RNC/Cédula"
-                                  name="nombreUsuario"
-                                  id="inputUsuarioModal"
-                                  type="text"
-                                />
-                              </div>
-                              <button
-                                type="submit"
-                                class="btn btn-outline-success btn-rounded btn-block"
-                                id="btnOlvidoClave"
-                              >
-                                Restablecer
-                              </button>
-                              <button
-                                id="btnOlvidoCancelar"
-                                class="btn btn-outline-danger btn-rounded btn-block"
-                                data-dismiss="modal"
-                                aria-hidden="true"
-                              >
-                                Cancelar
-                              </button>
-                            </fieldset>
-                            <input
-                              name="__RequestVerificationToken"
-                              type="hidden"
-                              value="CfDJ8HW6uwko4x9Nvs8khcRhUIaTrPPIistjyCAFn4wUL7pXMFJm2qPX0Z9v96ascMlNda9yeYi_FTgdr91o2pqXM2m3HiCx-TD4H7h5IxGwyFW4yHQ6Bpr8mpJBMPTmHHoyOapiAa4Sm9iQz7fs-8v-KCQ"
-                            />
-                          </form>
-                          <br />
-                          <span id="MensajeRespuesta"></span>
-                        </div>
+            </div>
+            <div class="modal-body">
+              <div class="col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="text-center">
+                      <p>
+                        Si ha olvidado su contraseña, por favor ingrese su
+                        identificación como contribuyente para restablecerla
+                      </p>
+                      <div class="panel-body">
+                        <form id="formularioOlvidoClave" method="post"
+                          action="/certecf/portalcertificacion/Login/OlvidoClave">
+                          <fieldset>
+                            <div class="form-group">
+                              <input class="form-control input-lg" placeholder="RNC/Cédula" name="nombreUsuario"
+                                id="inputUsuarioModal" type="text" />
+                            </div>
+                            <button type="submit" class="btn btn-outline-success btn-rounded btn-block"
+                              id="btnOlvidoClave">
+                              Restablecer
+                            </button>
+                            <button id="btnOlvidoCancelar" class="btn btn-outline-danger btn-rounded btn-block"
+                              data-dismiss="modal" aria-hidden="true">
+                              Cancelar
+                            </button>
+                          </fieldset>
+                          <input name="__RequestVerificationToken" type="hidden"
+                            value="CfDJ8HW6uwko4x9Nvs8khcRhUIaTrPPIistjyCAFn4wUL7pXMFJm2qPX0Z9v96ascMlNda9yeYi_FTgdr91o2pqXM2m3HiCx-TD4H7h5IxGwyFW4yHQ6Bpr8mpJBMPTmHHoyOapiAa4Sm9iQz7fs-8v-KCQ" />
+                        </form>
+                        <br />
+                        <span id="MensajeRespuesta"></span>
                       </div>
                     </div>
                   </div>
@@ -403,83 +274,71 @@
             </div>
           </div>
         </div>
-        <div id="loader"></div>
-      </main>
-    </div>
+      </div>
+      <div id="loader"></div>
+    </main>
+  </div>
 
-    <footer class="border-top footer">
-      <div class="container">
-        <div class="mb-4 mb-lg-5 text-center logo-footer-container">
-          <img
-            src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/foot_rep_dom.png"
-            class="logo-rd-footer"
-          />
-          <div class="separator-vertical"></div>
-          <img
-            src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/dgii_logo_light.svg"
-            class="logo-footer"
-          />
-          <p>
-            <strong> Dirección General de Impuestos Internos (DGII) </strong>
-          </p>
-          <p class="text-footer">
-            Av. México #48, Gascue, Santo Domingo, República Dominicana (Código
-            Postal: 10204)
-          </p>
-        </div>
-        <div class="mb-5 text-center text-footer">
-          <p>
-            <strong> Central Telefónica: </strong> 809-689-2181, 809-331-2181 y
-            desde el interior sin cargos 1-809-200-6160.
-          </p>
-          <p>
-            <strong> Centro de Contacto: </strong> 809-689-3444 y desde el
-            interior sin cargos 1-809-200-6060.
-          </p>
-          <p><strong>Línea de denuncias:</strong> 809-689-0131.</p>
-        </div>
-        <div
-          class="d-flex mb-3 mb-lg-0 align-items-center justify-content-center smaller-text"
-        >
-          <p>
-            <a
-              href="https://dgii.gov.do/Paginas/TerminosUso.aspx"
-              target="_blank"
-            >
-              Términos de uso
-            </a>
-          </p>
-          <div class="separator-vertical-small mx-3"></div>
-          <p>
-            <a
-              href="https://dgii.gov.do/Paginas/PoliticasPrivacidad.aspx"
-              target="_blank"
-            >
-              Políticas de privacidad
-            </a>
-          </p>
-
-          <div class="separator-vertical-small mx-3"></div>
-          <p>
-            <a href="https://dgii.gov.do/contacto" target="_blank">
-              Contacto
-            </a>
-          </p>
-        </div>
-        <br />
-        <p class="smaller-text">
-          © 2025 Todos los derechos reservados - Portal de Certificacion DGII
+  <footer class="border-top footer">
+    <div class="container">
+      <div class="mb-4 mb-lg-5 text-center logo-footer-container">
+        <img src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/foot_rep_dom.png" class="logo-rd-footer" />
+        <div class="separator-vertical"></div>
+        <img src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/dgii_logo_light.svg" class="logo-footer" />
+        <p>
+          <strong> Dirección General de Impuestos Internos (DGII) </strong>
+        </p>
+        <p class="text-footer">
+          Av. México #48, Gascue, Santo Domingo, República Dominicana (Código
+          Postal: 10204)
         </p>
       </div>
-    </footer>
+      <div class="mb-5 text-center text-footer">
+        <p>
+          <strong> Central Telefónica: </strong> 809-689-2181, 809-331-2181 y
+          desde el interior sin cargos 1-809-200-6160.
+        </p>
+        <p>
+          <strong> Centro de Contacto: </strong> 809-689-3444 y desde el
+          interior sin cargos 1-809-200-6060.
+        </p>
+        <p><strong>Línea de denuncias:</strong> 809-689-0131.</p>
+      </div>
+      <div class="d-flex mb-3 mb-lg-0 align-items-center justify-content-center smaller-text">
+        <p>
+          <a href="https://dgii.gov.do/Paginas/TerminosUso.aspx" target="_blank">
+            Términos de uso
+          </a>
+        </p>
+        <div class="separator-vertical-small mx-3"></div>
+        <p>
+          <a href="https://dgii.gov.do/Paginas/PoliticasPrivacidad.aspx" target="_blank">
+            Políticas de privacidad
+          </a>
+        </p>
 
-    <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/jquery.js"></script>
-    <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/bootstrap.bundle.js"></script>
+        <div class="separator-vertical-small mx-3"></div>
+        <p>
+          <a href="https://dgii.gov.do/contacto" target="_blank">
+            Contacto
+          </a>
+        </p>
+      </div>
+      <br />
+      <p class="smaller-text">
+        © 2025 Todos los derechos reservados - Portal de Certificacion DGII
+      </p>
+    </div>
+  </footer>
 
-    <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/bs-custom-file-input.js"></script>
-    <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/site.js"></script>
-    <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/comun.js"></script>
+  <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/jquery.js"></script>
+  <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/bootstrap.bundle.js"></script>
 
-    <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/CambioClave.js"></script>
-  </body>
+  <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/bs-custom-file-input.js"></script>
+  <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/site.js"></script>
+  <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/comun.js"></script>
+
+  <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/CambioClave.js"></script>
+</body>
+
 </html>
