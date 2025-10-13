@@ -167,8 +167,6 @@
                     href="./0 Autenticación - Portal Certificacion.htm">
                     Cerrar Sesión
                   </a>
-                  <input name="__RequestVerificationToken" type="hidden"
-                    value="CfDJ8HW6uwko4x9Nvs8khcRhUIZ24AyaW-c8Jk6DuLSgaf3RtR9DNsaLRy0h5Zn7vxGZO8OiG26RYXN1w37IFhYJrzvjMElsD9ipcs7tDQCncjlthO9z7Yk6V0mQ3GbwwBs71AISImZoxiwomLnXcZ3mxenwiQz0FjRoOd7-IbdRGJE7mMMQrhyyXErqY91A_XlExA" />
                 </form>
               </div>
             </li>
@@ -250,8 +248,7 @@
           </div>
         </div>
 
-        <input name="__RequestVerificationToken" type="hidden"
-          value="CfDJ8HW6uwko4x9Nvs8khcRhUIZ24AyaW-c8Jk6DuLSgaf3RtR9DNsaLRy0h5Zn7vxGZO8OiG26RYXN1w37IFhYJrzvjMElsD9ipcs7tDQCncjlthO9z7Yk6V0mQ3GbwwBs71AISImZoxiwomLnXcZ3mxenwiQz0FjRoOd7-IbdRGJE7mMMQrhyyXErqY91A_XlExA" />
+
       </form>
     </div>
     <div id="loader" style="display: none"></div>
@@ -292,206 +289,205 @@
     </style>
   </header>
 
-
-  <div class="row">
-    <div class="col-xl-3 col-sm-12" id="flujo">
-      <div class="p-3">
-        <p class="lead">
-          <b>Flujo certificación</b>
-          <button id="cert-flow-btn" class="btn btn-light eye-cert-flow d-block d-xl-none">
-            <i class="fas fa-eye"></i>
-          </button>
-        </p>
-        <hr />
-        <div class="cert-flow">
-          <div class="step step-done">
-            <div>
-              <div class="circle">1</div>
-            </div>
-            <div>
-              <div class="title">Registrado</div>
-            </div>
-          </div>
-          <div class="step step-done">
-            <div>
-              <div class="circle">2</div>
-            </div>
-            <div>
-              <div class="title">Pruebas de Datos e-CF</div>
-            </div>
-          </div>
-          <div class="step step-done">
-            <div>
-              <div class="circle">3</div>
-            </div>
-            <div>
-              <div class="title">Pruebas de Datos Aprobación Comercial</div>
-            </div>
-          </div>
-          <div class="step step-done">
-            <div>
-              <div class="circle">4</div>
-            </div>
-            <div>
-              <div class="title">Pruebas Simulación e-CF</div>
-            </div>
-          </div>
-          <div class="step step-done">
-            <div>
-              <div class="circle">5</div>
-            </div>
-            <div>
-              <div class="title">
-                Pruebas Simulación Representación Impresa
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3 col-sm-12" id="flujo">
+        <div class="p-3">
+          <p class="lead">
+            <b>Flujo certificación</b>
+            <button id="cert-flow-btn" class="btn btn-light eye-cert-flow d-block d-xl-none">
+              <i class="fas fa-eye"></i>
+            </button>
+          </p>
+          <hr />
+          <div class="cert-flow">
+            <div class="step step-done">
+              <div>
+                <div class="circle">1</div>
+              </div>
+              <div>
+                <div class="title">Registrado</div>
               </div>
             </div>
-          </div>
-          <div class="step step-done">
-            <div>
-              <div class="circle">6</div>
-            </div>
-            <div>
-              <div class="title">Validación Representación Impresa</div>
-            </div>
-          </div>
-          <div class="step step-done">
-            <div>
-              <div class="circle">7</div>
-            </div>
-            <div>
-              <div class="title">URL Servicios Prueba</div>
-            </div>
-          </div>
-          <div class="step step-done">
-            <div>
-              <div class="circle">8</div>
-            </div>
-            <div>
-              <div class="title">Inicio Prueba Recepción e-CF</div>
-            </div>
-          </div>
-          <div class="step step-done">
-            <div>
-              <div class="circle">9</div>
-            </div>
-            <div>
-              <div class="title">Recepción e-CF</div>
-            </div>
-          </div>
-          <div class="step step-done">
-            <div>
-              <div class="circle">10</div>
-            </div>
-            <div>
-              <div class="title">
-                Inicio Prueba Recepción Aprobación Comercial
+            <div class="step step-done">
+              <div>
+                <div class="circle">2</div>
+              </div>
+              <div>
+                <div class="title">Pruebas de Datos e-CF</div>
               </div>
             </div>
-          </div>
-          <div class="step step-done">
-            <div>
-              <div class="circle">11</div>
+            <div class="step step-done">
+              <div>
+                <div class="circle">3</div>
+              </div>
+              <div>
+                <div class="title">Pruebas de Datos Aprobación Comercial</div>
+              </div>
             </div>
-            <div>
-              <div class="title">Recepción Aprobación Comercial</div>
+            <div class="step step-done">
+              <div>
+                <div class="circle">4</div>
+              </div>
+              <div>
+                <div class="title">Pruebas Simulación e-CF</div>
+              </div>
             </div>
-          </div>
-          <div class="step step-active">
-            <div>
-              <div class="circle">12</div>
+            <div class="step step-done">
+              <div>
+                <div class="circle">5</div>
+              </div>
+              <div>
+                <div class="title">
+                  Pruebas Simulación Representación Impresa
+                </div>
+              </div>
             </div>
-            <div>
-              <div class="title">URL Servicios Producción</div>
+            <div class="step step-done">
+              <div>
+                <div class="circle">6</div>
+              </div>
+              <div>
+                <div class="title">Validación Representación Impresa</div>
+              </div>
             </div>
-          </div>
-          <div class="step">
-            <div>
-              <div class="circle">13</div>
+            <div class="step step-done">
+              <div>
+                <div class="circle">7</div>
+              </div>
+              <div>
+                <div class="title">URL Servicios Prueba</div>
+              </div>
             </div>
-            <div>
-              <div class="title">Declaración Jurada</div>
+            <div class="step step-done">
+              <div>
+                <div class="circle">8</div>
+              </div>
+              <div>
+                <div class="title">Inicio Prueba Recepción e-CF</div>
+              </div>
             </div>
-          </div>
-          <div class="step">
-            <div>
-              <div class="circle">14</div>
+            <div class="step step-done">
+              <div>
+                <div class="circle">9</div>
+              </div>
+              <div>
+                <div class="title">Recepción e-CF</div>
+              </div>
             </div>
-            <div>
-              <div class="title">Verificación Estatus</div>
+            <div class="step step-done">
+              <div>
+                <div class="circle">10</div>
+              </div>
+              <div>
+                <div class="title">
+                  Inicio Prueba Recepción Aprobación Comercial
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="step">
-            <div>
-              <div class="circle">15</div>
+            <div class="step step-done">
+              <div>
+                <div class="circle">11</div>
+              </div>
+              <div>
+                <div class="title">Recepción Aprobación Comercial</div>
+              </div>
             </div>
-            <div>
-              <div class="title">Finalizado</div>
+            <div class="step step-active">
+              <div>
+                <div class="circle">12</div>
+              </div>
+              <div>
+                <div class="title">URL Servicios Producción</div>
+              </div>
             </div>
-          </div>
-          <button type="button" class="btn btn-danger" id="btnCancelarPostulacion"
-            data-target="#modalCancelarPostulacion" data-toggle="modal" style="margin-top: 15px">
-            Cancelar Postulación
-          </button>
-          <!--modal Cancelar Postulacion-->
-          <div id="modalCancelarPostulacion" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"
-            data-backdrop="static" data-keyboard="false">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header" style="background-color: green; color: white">
-                  <div class="container">
-                    <div class="text-center">
-                      <h5 class="d-block">Cancelar Postulación</h5>
+            <div class="step">
+              <div>
+                <div class="circle">13</div>
+              </div>
+              <div>
+                <div class="title">Declaración Jurada</div>
+              </div>
+            </div>
+            <div class="step">
+              <div>
+                <div class="circle">14</div>
+              </div>
+              <div>
+                <div class="title">Verificación Estatus</div>
+              </div>
+            </div>
+            <div class="step">
+              <div>
+                <div class="circle">15</div>
+              </div>
+              <div>
+                <div class="title">Finalizado</div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-danger" id="btnCancelarPostulacion"
+              data-target="#modalCancelarPostulacion" data-toggle="modal" style="margin-top: 15px">
+              Cancelar Postulación
+            </button>
+            <!--modal Cancelar Postulacion-->
+            <div id="modalCancelarPostulacion" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"
+              data-backdrop="static" data-keyboard="false">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: green; color: white">
+                    <div class="container">
+                      <div class="text-center">
+                        <h5 class="d-block">Cancelar Postulación</h5>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="modal-body">
-                  <div class="col-md-12">
-                    <div class="panel panel-default">
-                      <div class="panel-body">
-                        <div class="text-center">
-                          <p style="font-weight: bold; font-size: 1.2rem">
-                            ¿Está seguro que desea cancelar la postulación?
-                          </p>
-                          <div class="panel-body">
-                            <form id="frmCancelarPostulacion" method="post"
-                              action="/certecf/portalcertificacion/Postulacion/Cancelar">
-                              <select class="form-control" id="dropMotivoCancelacion" name="dropMotivoCancelacion">
-                                <option value="" selected="selected">
-                                  --------- Seleccione ---------
-                                </option>
-                                <option value="1">
-                                  Cambio de Representante
-                                </option>
-                                <option value="2">
-                                  Proceso de Certificación con Proveedor
-                                </option>
-                                <option value="3">
-                                  Proceso de Certificación sin Proveedor
-                                </option>
-                                <option value="4">
-                                  Cambio de Proveedor
-                                </option>
-                                <option value="5">
-                                  Información Errónea del Proveedor
-                                </option>
-                              </select>
-                              <span id="MensajeRespuesta" style="color: red"></span>
-                              <br />
-                              <div class="modal-footer">
-                                <div class="col-md-12">
-                                  <button type="button" class="btn btn-outline-danger btn-rounded"
-                                    id="btnSalirCancelarPostulacion" data-dismiss="modal" aria-hidden="true">
-                                    Cancelar
-                                  </button>
-                                  <button type="submit" style="margin-left: 44%"
-                                    class="btn btn-outline-success btn-rounded" id="btnConfirmPostulacionCancelada">
-                                    Aceptar
-                                  </button>
+                  <div class="modal-body">
+                    <div class="col-md-12">
+                      <div class="panel panel-default">
+                        <div class="panel-body">
+                          <div class="text-center">
+                            <p style="font-weight: bold; font-size: 1.2rem">
+                              ¿Está seguro que desea cancelar la postulación?
+                            </p>
+                            <div class="panel-body">
+                              <form id="frmCancelarPostulacion" method="post"
+                                action="/certecf/portalcertificacion/Postulacion/Cancelar">
+                                <select class="form-control" id="dropMotivoCancelacion" name="dropMotivoCancelacion">
+                                  <option value="" selected="selected">
+                                    --------- Seleccione ---------
+                                  </option>
+                                  <option value="1">
+                                    Cambio de Representante
+                                  </option>
+                                  <option value="2">
+                                    Proceso de Certificación con Proveedor
+                                  </option>
+                                  <option value="3">
+                                    Proceso de Certificación sin Proveedor
+                                  </option>
+                                  <option value="4">
+                                    Cambio de Proveedor
+                                  </option>
+                                  <option value="5">
+                                    Información Errónea del Proveedor
+                                  </option>
+                                </select>
+                                <span id="MensajeRespuesta" style="color: red"></span>
+                                <br />
+                                <div class="modal-footer">
+                                  <div class="col-md-12">
+                                    <button type="button" class="btn btn-outline-danger btn-rounded"
+                                      id="btnSalirCancelarPostulacion" data-dismiss="modal" aria-hidden="true">
+                                      Cancelar
+                                    </button>
+                                    <button type="submit" style="margin-left: 44%"
+                                      class="btn btn-outline-success btn-rounded" id="btnConfirmPostulacionCancelada">
+                                      Aceptar
+                                    </button>
+                                  </div>
                                 </div>
-                              </div>
-                              <input name="__RequestVerificationToken" type="hidden"
-                                value="CfDJ8HW6uwko4x9Nvs8khcRhUIZF8YSMITufa9UHK3XyQ-veXfT6WbEtNZPNaPf59ENL-ILeXnMBBqWmrB9fiQ1rXnTNRVd9cNtT610SNg7YLRy2M43urGDlWhvONvzyE5yq20_OK13hMXelLxOUG0rSwBjBEVL4zuq3wc4oyAF8gJQ5zLnhDMXwY55ygPFxhBGuLQ" />
-                            </form>
+                              </form>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -500,55 +496,53 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!--modal Retonar Postulacion-->
-          <div id="modalRetornarPostulacion" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"
-            data-backdrop="static" data-keyboard="false">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header" style="background-color: green; color: white">
-                  <div class="container">
-                    <div class="text-center">
-                      <h5 class="d-block">Confirmación Retorno de Paso</h5>
+            <!--modal Retonar Postulacion-->
+            <div id="modalRetornarPostulacion" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"
+              data-backdrop="static" data-keyboard="false">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: green; color: white">
+                    <div class="container">
+                      <div class="text-center">
+                        <h5 class="d-block">Confirmación Retorno de Paso</h5>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="modal-body">
-                  <div class="col-md-12">
-                    <div class="panel panel-default">
-                      <div class="panel-body">
-                        <div class="text-center">
-                          <p style="font-weight: bold; font-size: 1.2rem">
-                            ¿Está seguro que desea retornar la postulación
-                            al paso previo?
-                          </p>
-                          <div class="panel-body">
-                            <form id="frmRetornarPostulacion" method="post"
-                              action="/certecf/portalcertificacion/Postulacion/Retornar">
-                              <fieldset>
-                                <div class="form-group">
-                                  <textarea class="form-control input-lg" name="motivo"
-                                    placeholder="Ingresar Justificación" id="txtMotivoR"></textarea>
+                  <div class="modal-body">
+                    <div class="col-md-12">
+                      <div class="panel panel-default">
+                        <div class="panel-body">
+                          <div class="text-center">
+                            <p style="font-weight: bold; font-size: 1.2rem">
+                              ¿Está seguro que desea retornar la postulación
+                              al paso previo?
+                            </p>
+                            <div class="panel-body">
+                              <form id="frmRetornarPostulacion" method="post"
+                                action="/certecf/portalcertificacion/Postulacion/Retornar">
+                                <fieldset>
+                                  <div class="form-group">
+                                    <textarea class="form-control input-lg" name="motivo"
+                                      placeholder="Ingresar Justificación" id="txtMotivoR"></textarea>
+                                  </div>
+                                </fieldset>
+                                <input id="IdEstado" hidden="" value="FormularioServicioProduccion" />
+                                <span id="MensajeRespuestaR" style="color: red"></span>
+                                <br />
+                                <div class="modal-footer">
+                                  <div class="col-md-12">
+                                    <button type="button" class="btn btn-outline-danger btn-rounded"
+                                      id="btnSalirRetornarPostulacion" data-dismiss="modal" aria-hidden="true">
+                                      Cancelar
+                                    </button>
+                                    <button type="submit" style="margin-left: 44%"
+                                      class="btn btn-outline-success btn-rounded" id="btnConfirmRetorno">
+                                      Aceptar
+                                    </button>
+                                  </div>
                                 </div>
-                              </fieldset>
-                              <input id="IdEstado" hidden="" value="FormularioServicioProduccion" />
-                              <span id="MensajeRespuestaR" style="color: red"></span>
-                              <br />
-                              <div class="modal-footer">
-                                <div class="col-md-12">
-                                  <button type="button" class="btn btn-outline-danger btn-rounded"
-                                    id="btnSalirRetornarPostulacion" data-dismiss="modal" aria-hidden="true">
-                                    Cancelar
-                                  </button>
-                                  <button type="submit" style="margin-left: 44%"
-                                    class="btn btn-outline-success btn-rounded" id="btnConfirmRetorno">
-                                    Aceptar
-                                  </button>
-                                </div>
-                              </div>
-                              <input name="__RequestVerificationToken" type="hidden"
-                                value="CfDJ8HW6uwko4x9Nvs8khcRhUIZF8YSMITufa9UHK3XyQ-veXfT6WbEtNZPNaPf59ENL-ILeXnMBBqWmrB9fiQ1rXnTNRVd9cNtT610SNg7YLRy2M43urGDlWhvONvzyE5yq20_OK13hMXelLxOUG0rSwBjBEVL4zuq3wc4oyAF8gJQ5zLnhDMXwY55ygPFxhBGuLQ" />
-                            </form>
+                              </form>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -560,149 +554,146 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-xl-9 col-sm-12" id="mainColumn">
-      <main role="main" class="pb-3">
-        <div class="shadow-sm p-3 mb-5 bg-white rounded">
-          <div class="alert alert-danger alert-dismissible" role="alert" id="alertErrorMensaje" style="display: none">
-            <strong>Ha ocurrido un error!</strong>
-            <label id="labelErrorMensaje"></label>
-          </div>
-          <p class="lead">Paso 12: <b>URL Servicios Producción</b></p>
-          <hr />
-          <div class="alert alert-info" role="alert">
-            <i class="fas fa-info-circle fa-fw"></i> Etapa en la que deben
-            ser actualizadas las URL de los servicios de Recepción,
-            Aprobación Comercial y Autenticación, en ambiente productivo;
-            las mismas serán cargadas en el directorio de servicios públicos
-            visualizado desde la Oficina Virtual (OFV).
-          </div>
-          <div class="row">
-            <div class="container">
-              <form id="frmConfirmarUrlProduccion" novalidate="novalidate">
-                <span class="h6"><i class="fas fa-link fa-fw"></i> URLs:
-                </span>
-                <hr />
+      <div class="col-xl-9 col-sm-12" id="mainColumn">
+        <main role="main" class="pb-3">
+          <div class="shadow-sm p-3 mb-5 bg-white rounded">
+            <div class="alert alert-danger alert-dismissible" role="alert" id="alertErrorMensaje" style="display: none">
+              <strong>Ha ocurrido un error!</strong>
+              <label id="labelErrorMensaje"></label>
+            </div>
+            <p class="lead">Paso 12: <b>URL Servicios Producción</b></p>
+            <hr />
+            <div class="alert alert-info" role="alert">
+              <i class="fas fa-info-circle fa-fw"></i> Etapa en la que deben
+              ser actualizadas las URL de los servicios de Recepción,
+              Aprobación Comercial y Autenticación, en ambiente productivo;
+              las mismas serán cargadas en el directorio de servicios públicos
+              visualizado desde la Oficina Virtual (OFV).
+            </div>
+            <div class="row">
+              <div class="container">
+                <form id="frmConfirmarUrlProduccion" novalidate="novalidate">
+                  <span class="h6"><i class="fas fa-link fa-fw"></i> URLs:
+                  </span>
+                  <hr />
 
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-12">
-                    <input type="hidden" data-val="true" data-val-required="The TipoUrl field is required."
-                      id="tiposUrl_0_" name="tiposUrl[0]" value="UrlAutenticacion" />
-                    <label>
-                      <customtipourl><span>Servicio de Autenticación</span></customtipourl>
-                    </label>
-                    <div class="d-lg-none">
-                      <div class="input-group-text">https://</div>
-                    </div>
-                    <div class="input-group mb-2">
-                      <div class="input-group-append d-none d-lg-block d-xl-block">
+                  <div class="form-row">
+                    <div class="form-group col-sm-12 col-md-12">
+                      <input type="hidden" data-val="true" data-val-required="The TipoUrl field is required."
+                        id="tiposUrl_0_" name="tiposUrl[0]" value="UrlAutenticacion" />
+                      <label>
+                        <customtipourl><span>Servicio de Autenticación</span></customtipourl>
+                      </label>
+                      <div class="d-lg-none">
                         <div class="input-group-text">https://</div>
                       </div>
-                      <input class="form-control" type="text" id="urlAutenticacion" name="urlAutenticacion" />
-                      <div class="input-group-append d-none d-lg-block d-xl-block">
+                      <div class="input-group mb-2">
+                        <div class="input-group-append d-none d-lg-block d-xl-block">
+                          <div class="input-group-text">https://</div>
+                        </div>
+                        <input class="form-control" type="text" id="urlAutenticacion" name="urlAutenticacion" />
+                        <div class="input-group-append d-none d-lg-block d-xl-block">
+                          <div class="input-group-text">
+                            /fe/autenticacion/api/[semilla|ValidacionCertificado]
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-lg-none">
                         <div class="input-group-text">
                           /fe/autenticacion/api/[semilla|ValidacionCertificado]
                         </div>
                       </div>
+                      <span class="text-danger field-validation-valid" data-valmsg-for="urlAutenticacion"
+                        data-valmsg-replace="true"></span>
                     </div>
-                    <div class="d-lg-none">
-                      <div class="input-group-text">
-                        /fe/autenticacion/api/[semilla|ValidacionCertificado]
-                      </div>
-                    </div>
-                    <span class="text-danger field-validation-valid" data-valmsg-for="urlAutenticacion"
-                      data-valmsg-replace="true"></span>
-                  </div>
-                  <div class="form-group col-sm-12 col-md-12">
-                    <input type="hidden" data-val="true" data-val-required="The TipoUrl field is required."
-                      id="tiposUrl_1_" name="tiposUrl[1]" value="UrlRecepcion" />
-                    <label>
-                      <customtipourl><span>Servicio de Recepción</span></customtipourl>
-                      <b style="color: red" title="Campo requerido">*</b>
-                    </label>
-                    <div class="d-lg-none">
-                      <div class="input-group-text">https://</div>
-                    </div>
-                    <div class="input-group mb-2">
-                      <div class="input-group-append d-none d-lg-block d-xl-block">
+                    <div class="form-group col-sm-12 col-md-12">
+                      <input type="hidden" data-val="true" data-val-required="The TipoUrl field is required."
+                        id="tiposUrl_1_" name="tiposUrl[1]" value="UrlRecepcion" />
+                      <label>
+                        <customtipourl><span>Servicio de Recepción</span></customtipourl>
+                        <b style="color: red" title="Campo requerido">*</b>
+                      </label>
+                      <div class="d-lg-none">
                         <div class="input-group-text">https://</div>
                       </div>
-                      <input class="form-control" type="text" id="urlRecepcion" name="urlRecepcion" />
-                      <div class="input-group-append d-none d-lg-block d-xl-block">
+                      <div class="input-group mb-2">
+                        <div class="input-group-append d-none d-lg-block d-xl-block">
+                          <div class="input-group-text">https://</div>
+                        </div>
+                        <input class="form-control" type="text" id="urlRecepcion" name="urlRecepcion" />
+                        <div class="input-group-append d-none d-lg-block d-xl-block">
+                          <div class="input-group-text">
+                            /fe/recepcion/api/ecf
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-lg-none">
                         <div class="input-group-text">
                           /fe/recepcion/api/ecf
                         </div>
                       </div>
+                      <span class="text-danger field-validation-valid" data-valmsg-for="urlRecepcion"
+                        data-valmsg-replace="true"></span>
                     </div>
-                    <div class="d-lg-none">
-                      <div class="input-group-text">
-                        /fe/recepcion/api/ecf
-                      </div>
-                    </div>
-                    <span class="text-danger field-validation-valid" data-valmsg-for="urlRecepcion"
-                      data-valmsg-replace="true"></span>
-                  </div>
-                  <div class="form-group col-sm-12 col-md-12">
-                    <input type="hidden" data-val="true" data-val-required="The TipoUrl field is required."
-                      id="tiposUrl_2_" name="tiposUrl[2]" value="UrlAprobacionComercial" />
-                    <label>
-                      <customtipourl><span>Servicio de Aprobación Comercial</span></customtipourl>
-                      <b style="color: red" title="Campo requerido">*</b>
-                    </label>
-                    <div class="d-lg-none">
-                      <div class="input-group-text">https://</div>
-                    </div>
-                    <div class="input-group mb-2">
-                      <div class="input-group-append d-none d-lg-block d-xl-block">
+                    <div class="form-group col-sm-12 col-md-12">
+                      <input type="hidden" data-val="true" data-val-required="The TipoUrl field is required."
+                        id="tiposUrl_2_" name="tiposUrl[2]" value="UrlAprobacionComercial" />
+                      <label>
+                        <customtipourl><span>Servicio de Aprobación Comercial</span></customtipourl>
+                        <b style="color: red" title="Campo requerido">*</b>
+                      </label>
+                      <div class="d-lg-none">
                         <div class="input-group-text">https://</div>
                       </div>
-                      <input class="form-control" type="text" id="UrlAprobacionComercial"
-                        name="UrlAprobacionComercial" />
-                      <div class="input-group-append d-none d-lg-block d-xl-block">
+                      <div class="input-group mb-2">
+                        <div class="input-group-append d-none d-lg-block d-xl-block">
+                          <div class="input-group-text">https://</div>
+                        </div>
+                        <input class="form-control" type="text" id="UrlAprobacionComercial"
+                          name="UrlAprobacionComercial" />
+                        <div class="input-group-append d-none d-lg-block d-xl-block">
+                          <div class="input-group-text">
+                            /fe/aprobacioncomercial/api/ecf
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-lg-none">
                         <div class="input-group-text">
                           /fe/aprobacioncomercial/api/ecf
                         </div>
                       </div>
+                      <span class="text-danger field-validation-valid" data-valmsg-for="UrlAprobacionComercial"
+                        data-valmsg-replace="true"></span>
                     </div>
-                    <div class="d-lg-none">
-                      <div class="input-group-text">
-                        /fe/aprobacioncomercial/api/ecf
-                      </div>
-                    </div>
-                    <span class="text-danger field-validation-valid" data-valmsg-for="UrlAprobacionComercial"
-                      data-valmsg-replace="true"></span>
                   </div>
-                </div>
-                <br />
-                <div class="row justify-content-end">
-                  <a href="./6 Pruebas Certificación - Portal Certificacion.htm" class="btn btn-success btn-rounded"
-                    id="Confirmar">
-                    <i class="fas fa-edit fa-fw"></i> Confirmar URLS</a>
-                  &nbsp;
-                </div>
-                <input name="__RequestVerificationToken" type="hidden"
-                  value="CfDJ8HW6uwko4x9Nvs8khcRhUIZF8YSMITufa9UHK3XyQ-veXfT6WbEtNZPNaPf59ENL-ILeXnMBBqWmrB9fiQ1rXnTNRVd9cNtT610SNg7YLRy2M43urGDlWhvONvzyE5yq20_OK13hMXelLxOUG0rSwBjBEVL4zuq3wc4oyAF8gJQ5zLnhDMXwY55ygPFxhBGuLQ" />
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <div class="shadow-sm p-3 mb-5 bg-white rounded">
-          <div id="tblLogs">
-            <div class="container">
-              <span class="h6"><i class="fas fa-database fa-fw"></i> Logs registrados
-                durante esta etapa del proceso de certificación.</span>
-
-              <hr />
-              <h4>No existen mensajes.</h4>
+                  <br />
+                  <div class="row justify-content-end">
+                    <a href="./6 Pruebas Certificación - Portal Certificacion.htm" class="btn btn-success btn-rounded"
+                      id="Confirmar">
+                      <i class="fas fa-edit fa-fw"></i> Confirmar URLS</a>
+                    &nbsp;
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
 
-          <div id="loader"></div>
-        </div>
-      </main>
+          <div class="shadow-sm p-3 mb-5 bg-white rounded">
+            <div id="tblLogs">
+              <div class="container">
+                <span class="h6"><i class="fas fa-database fa-fw"></i> Logs registrados
+                  durante esta etapa del proceso de certificación.</span>
+
+                <hr />
+                <h4>No existen mensajes.</h4>
+              </div>
+            </div>
+
+            <div id="loader"></div>
+          </div>
+        </main>
+      </div>
     </div>
-  </div>
   </div>
 
 
