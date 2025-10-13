@@ -96,84 +96,249 @@
 </head>
 
 <body>
-  <div class="container">
-    <script>
-      (function () {
-        var button = document.querySelector(
-          "#cookieConsent button[data-cookie-string]"
-        );
-        button.addEventListener(
-          "click",
-          function (event) {
-            document.cookie = button.dataset.cookieString;
-          },
-          false
-        );
-      })();
-    </script>
 
-    <main role="main" class="pb-3">
-      <style>
-        .welcomeTitle {
-          color: #1c7d32;
-          font-weight: bold;
-          font-size: 2.1rem !important;
-        }
-      </style>
+  <header>
 
+    <style>
+      .dropdown-menu {
+        background-color: #28368d;
+      }
+
+      .toolbar {
+        background-color: #28368d;
+        color: white;
+      }
+
+      .toolbar:hover {
+        background-color: #3243ac !important;
+        cursor: pointer;
+        color: white;
+      }
+    </style>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
       <div class="container">
-        <p class="welcomeTitle lead text-center">
-          ¡Bienvenidos al Portal de Certificación de Facturación Electrónica!
-        </p>
-        <hr />
-        <div class="card card-login mx-auto mt-5">
-          <div class="card-header">
-            Favor ingrese sus credenciales para continuar
-          </div>
-          <div class="card-body">
-            <form method="get" id="formularioLogin" action="./0.5 Inicio - Portal Certificacion.htm">
-              <div class="form-group">
-                <div class="form-label-group">
-                  <label for="inputRnc">RNC/Cédula</label>
-                  <input type="text" id="inputUserName" name="username" class="form-control" placeholder="RNC/Cédula"
-                    required="required" autofocus="autofocus" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
-                    value="124000000" />
+        <a class="navbar-brand" id="linkRedirectHome">
+          <img src="./FORTECH logo.png" class="logo-navbar" alt="Portal Certificación" />
+          <br />
+          <kbd style="background-color: #3243ac;">Certificación Facturación Electrónica</kbd>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse">
+          <ul class="navbar-nav mr-auto"></ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-dark navbar-dropdownlink">
+                <i class="fas fa-envelope fa-fw"></i> <b>1</b>
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark navbar-dropdownlink" href="" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user-circle fa-fw"></i>
+                <b>Rnc/Cédula:</b> 124000000
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item toolbar" id="itemPerfil" href="./Perfil - Portal Certificacion.htm">Perfil</a>
+                <a class="dropdown-item toolbar" href="#" id="itemCambiarClave">Contraseña
+                </a>
+                <a class="dropdown-item toolbar" id="itemHistorial"
+                  href="./Historial Certificación - Portal Certificacion.htm">Historial</a>
+                <form method="GET" action="#">
+                  <a class="dropdown-item clickPointer toolbar" id="itemCerrarSesion"
+                    href="./0 Autenticación - Portal Certificacion.htm">
+                    Cerrar Sesión
+                  </a>
+                  <input name="__RequestVerificationToken" type="hidden"
+                    value="CfDJ8HW6uwko4x9Nvs8khcRhUIZ24AyaW-c8Jk6DuLSgaf3RtR9DNsaLRy0h5Zn7vxGZO8OiG26RYXN1w37IFhYJrzvjMElsD9ipcs7tDQCncjlthO9z7Yk6V0mQ3GbwwBs71AISImZoxiwomLnXcZ3mxenwiQz0FjRoOd7-IbdRGJE7mMMQrhyyXErqY91A_XlExA" />
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="CambiarClave">
+      <form method="get" id="formularioCambiarClave" home-url="/certecf/portalcertificacion" class="needs-validation"
+        novalidate="" action="/certecf/portalcertificacion/Login/CambiarClave">
+        <!-- Modal -->
+        <div class="modal fade" id="modalCambiarClave" tabindex="-1" role="dialog" aria-labelledby="modalCambiarClave"
+          aria-hidden="true" data-backdrop="static" data-keyboard="false">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Cambiar contraseña
+                </h5>
+                <button id="btnCerrarModal" type="button" class="close" aria-label="Cerrar">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="clave">Contraseña actual</label>
+                  <input type="password" name="clave" id="clave" class="form-control" required="" />
+                  <div class="invalid-feedback" id="claveInvalida">
+                    Campo requerido
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="nuevaClave">Nueva contraseña</label>
+                  <input type="password" name="nuevaClave" id="nuevaClave" class="form-control pwds" required=""
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" />
+                  <div class="valid-feedback" id="nuevaClaveValida">
+                    La nueva contraseña es valida
+                  </div>
+                  <div class="invalid-feedback" id="nuevaClaveInvalida">
+                    Campo requerido
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="repeticionClave">Repetir contraseña</label>
+                  <input type="password" name="repeticionClave" id="repeticionClave" class="form-control pwds"
+                    required="" />
+                  <div id="repeticionClaveValida" class="valid-feedback"></div>
+                  <div id="repeticionClaveInValida" class="invalid-feedback">
+                    Campo requerido
+                  </div>
+                </div>
+                <label class="text-danger" id="mensajeErrorCambiarClave"></label>
+                <div id="message">
+                  <h5>La contraseña debe contener lo siguiente:</h5>
+                  <p id="letter" class="invalid">
+                    Una letra <b>minúscula</b>
+                  </p>
+                  <p id="capital" class="invalid">
+                    Una letra <b>mayúscula</b>
+                  </p>
+                  <p id="number" class="invalid">Un <b>número</b></p>
+                  <p id="length" class="invalid">
+                    Al menos <b>8 caracteres</b>
+                  </p>
                 </div>
               </div>
-              <div class="form-group">
-                <div class="form-label-group">
-                  <label for="inputPassword">Contraseña</label>
-                  <input type="password" id="inputClave" name="password" class="form-control" placeholder="Contraseña"
-                    required="required" autocomplete="off" />
-                </div>
+              <div class="modal-footer">
+                <button id="btnCancelar" type="button" class="btn btn-secondary">
+                  Cancelar
+                </button>
+                <button type="submit" class="btn" style="background-color: #1e7e34; color: white"
+                  id="btnSubmitFormularioCambioClave">
+                  Cambiar
+                </button>
               </div>
-              <button onclick="location.href=''" class="btn btn-outline-success btn-rounded btn-block" id="btningresar">
-                <i class="fas fa-lock fa-fw"></i> Ingresar
-              </button>
-
-              <input name="__RequestVerificationToken" type="hidden"
-                value="CfDJ8HW6uwko4x9Nvs8khcRhUIaTrPPIistjyCAFn4wUL7pXMFJm2qPX0Z9v96ascMlNda9yeYi_FTgdr91o2pqXM2m3HiCx-TD4H7h5IxGwyFW4yHQ6Bpr8mpJBMPTmHHoyOapiAa4Sm9iQz7fs-8v-KCQ" />
-            </form>
-            <br />
-
-            <div class="text-center">
-              <a class="d-block small text-success" href="#" data-target="#modalOlvidoClave" data-toggle="modal"
-                id="enlOlvidoClave">¿Has olvidado tu contraseña?</a>
             </div>
           </div>
         </div>
-      </div>
 
-      <!--modal-->
-      <div id="modalOlvidoClave" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <div class="container">
-                <div class="text-center">
-                  <h4 class="d-block">Restablecer contraseña</h4>
-                </div>
-                <button id="btnCerrarModal" type="button" class="close" aria-label="Cerrar" style="
+        <input name="__RequestVerificationToken" type="hidden"
+          value="CfDJ8HW6uwko4x9Nvs8khcRhUIZ24AyaW-c8Jk6DuLSgaf3RtR9DNsaLRy0h5Zn7vxGZO8OiG26RYXN1w37IFhYJrzvjMElsD9ipcs7tDQCncjlthO9z7Yk6V0mQ3GbwwBs71AISImZoxiwomLnXcZ3mxenwiQz0FjRoOd7-IbdRGJE7mMMQrhyyXErqY91A_XlExA" />
+      </form>
+    </div>
+    <div id="loader" style="display: none"></div>
+    <style>
+      #message {
+        display: none;
+        background: #f1f1f1;
+        color: #000;
+        position: relative;
+        padding: 5px;
+        margin-top: 10px;
+      }
+
+      #message p {
+        padding: 5px 35px;
+        font-size: 14px;
+      }
+
+      .valid {
+        color: green;
+      }
+
+      .valid:before {
+        position: relative;
+        left: -35px;
+        content: "✔";
+      }
+
+      .invalid {
+        color: red;
+      }
+
+      .invalid:before {
+        position: relative;
+        left: -35px;
+        content: "✖";
+      }
+    </style>
+  </header>
+
+  <main role="main" class="pb-3">
+    <style>
+      .welcomeTitle {
+        color: #1c7d32;
+        font-weight: bold;
+        font-size: 2.1rem !important;
+      }
+    </style>
+
+    <div class="container">
+      <p class="welcomeTitle lead text-center">
+        ¡Bienvenidos al Portal de Certificación de Facturación Electrónica!
+      </p>
+      <hr />
+      <div class="card card-login mx-auto mt-5">
+        <div class="card-header">
+          Favor ingrese sus credenciales para continuar
+        </div>
+        <div class="card-body">
+          <form method="get" id="formularioLogin" action="./0.5 Inicio - Portal Certificacion.htm">
+            <div class="form-group">
+              <div class="form-label-group">
+                <label for="inputRnc">RNC/Cédula</label>
+                <input type="text" id="inputUserName" name="username" class="form-control" placeholder="RNC/Cédula"
+                  required="required" autofocus="autofocus" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                  value="124000000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <label for="inputPassword">Contraseña</label>
+                <input type="password" id="inputClave" name="password" class="form-control" placeholder="Contraseña"
+                  required="required" autocomplete="off" />
+              </div>
+            </div>
+            <button onclick="location.href=''" class="btn btn-outline-success btn-rounded btn-block" id="btningresar">
+              <i class="fas fa-lock fa-fw"></i> Ingresar
+            </button>
+
+            <input name="__RequestVerificationToken" type="hidden"
+              value="CfDJ8HW6uwko4x9Nvs8khcRhUIaTrPPIistjyCAFn4wUL7pXMFJm2qPX0Z9v96ascMlNda9yeYi_FTgdr91o2pqXM2m3HiCx-TD4H7h5IxGwyFW4yHQ6Bpr8mpJBMPTmHHoyOapiAa4Sm9iQz7fs-8v-KCQ" />
+          </form>
+          <br />
+
+          <div class="text-center">
+            <a class="d-block small text-success" href="#" data-target="#modalOlvidoClave" data-toggle="modal"
+              id="enlOlvidoClave">¿Has olvidado tu contraseña?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal-->
+    <div id="modalOlvidoClave" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="container">
+              <div class="text-center">
+                <h4 class="d-block">Restablecer contraseña</h4>
+              </div>
+              <button id="btnCerrarModal" type="button" class="close" aria-label="Cerrar" style="
                       padding-bottom: 0px;
                       padding-top: 0px;
                       padding-right: 0px;
@@ -182,42 +347,41 @@
                       margin-top: 0px;
                       margin-right: 0px;
                     ">
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
+                <span aria-hidden="true">×</span>
+              </button>
             </div>
-            <div class="modal-body">
-              <div class="col-md-12">
-                <div class="panel panel-default">
-                  <div class="panel-body">
-                    <div class="text-center">
-                      <p>
-                        Si ha olvidado su contraseña, por favor ingrese su
-                        identificación como contribuyente para restablecerla
-                      </p>
-                      <div class="panel-body">
-                        <form id="formularioOlvidoClave" method="post"
-                          action="/certecf/portalcertificacion/Login/OlvidoClave">
-                          <fieldset>
-                            <div class="form-group">
-                              <input class="form-control input-lg" placeholder="RNC/Cédula" name="nombreUsuario"
-                                id="inputUsuarioModal" type="text" />
-                            </div>
-                            <button type="submit" class="btn btn-outline-success btn-rounded btn-block"
-                              id="btnOlvidoClave">
-                              Restablecer
-                            </button>
-                            <button id="btnOlvidoCancelar" class="btn btn-outline-danger btn-rounded btn-block"
-                              data-dismiss="modal" aria-hidden="true">
-                              Cancelar
-                            </button>
-                          </fieldset>
-                          <input name="__RequestVerificationToken" type="hidden"
-                            value="CfDJ8HW6uwko4x9Nvs8khcRhUIaTrPPIistjyCAFn4wUL7pXMFJm2qPX0Z9v96ascMlNda9yeYi_FTgdr91o2pqXM2m3HiCx-TD4H7h5IxGwyFW4yHQ6Bpr8mpJBMPTmHHoyOapiAa4Sm9iQz7fs-8v-KCQ" />
-                        </form>
-                        <br />
-                        <span id="MensajeRespuesta"></span>
-                      </div>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="text-center">
+                    <p>
+                      Si ha olvidado su contraseña, por favor ingrese su
+                      identificación como contribuyente para restablecerla
+                    </p>
+                    <div class="panel-body">
+                      <form id="formularioOlvidoClave" method="post"
+                        action="/certecf/portalcertificacion/Login/OlvidoClave">
+                        <fieldset>
+                          <div class="form-group">
+                            <input class="form-control input-lg" placeholder="RNC/Cédula" name="nombreUsuario"
+                              id="inputUsuarioModal" type="text" />
+                          </div>
+                          <button type="submit" class="btn btn-outline-success btn-rounded btn-block"
+                            id="btnOlvidoClave">
+                            Restablecer
+                          </button>
+                          <button id="btnOlvidoCancelar" class="btn btn-outline-danger btn-rounded btn-block"
+                            data-dismiss="modal" aria-hidden="true">
+                            Cancelar
+                          </button>
+                        </fieldset>
+                        <input name="__RequestVerificationToken" type="hidden"
+                          value="CfDJ8HW6uwko4x9Nvs8khcRhUIaTrPPIistjyCAFn4wUL7pXMFJm2qPX0Z9v96ascMlNda9yeYi_FTgdr91o2pqXM2m3HiCx-TD4H7h5IxGwyFW4yHQ6Bpr8mpJBMPTmHHoyOapiAa4Sm9iQz7fs-8v-KCQ" />
+                      </form>
+                      <br />
+                      <span id="MensajeRespuesta"></span>
                     </div>
                   </div>
                 </div>
@@ -226,8 +390,9 @@
           </div>
         </div>
       </div>
-      <div id="loader"></div>
-    </main>
+    </div>
+    <div id="loader"></div>
+  </main>
   </div>
 
   <script src="0%20Autenticaci%C3%B3n%20-%20Portal%20Certificacion_files/jquery.js"></script>

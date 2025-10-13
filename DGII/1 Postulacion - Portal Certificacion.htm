@@ -293,222 +293,206 @@
       }
     </style>
   </header>
-  <div class="container" style="margin-bottom: 126px !important">
 
-    <script>
-      (function () {
-        var button = document.querySelector(
-          "#cookieConsent button[data-cookie-string]"
-        );
-        button.addEventListener(
-          "click",
-          function (event) {
-            document.cookie = button.dataset.cookieString;
-          },
-          false
-        );
-      })();
-    </script>
 
-    <div class="row">
-      <div class="col-xl-3 col-sm-12" id="flujo">
-        <div class="p-3">
-          <p class="lead">
-            <b>Flujo certificación</b>
-            <button id="cert-flow-btn" class="btn btn-light eye-cert-flow d-block d-xl-none">
-              <i class="fas fa-eye"></i>
-            </button>
-          </p>
-          <hr />
-          <div class="cert-flow">
-            <div class="step step-active">
-              <div>
-                <div class="circle">1</div>
-              </div>
-              <div>
-                <div class="title">Registrado</div>
+  <div class="row">
+    <div class="col-xl-3 col-sm-12" id="flujo">
+      <div class="p-3">
+        <p class="lead">
+          <b>Flujo certificación</b>
+          <button id="cert-flow-btn" class="btn btn-light eye-cert-flow d-block d-xl-none">
+            <i class="fas fa-eye"></i>
+          </button>
+        </p>
+        <hr />
+        <div class="cert-flow">
+          <div class="step step-active">
+            <div>
+              <div class="circle">1</div>
+            </div>
+            <div>
+              <div class="title">Registrado</div>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">2</div>
+            </div>
+            <div>
+              <div class="title">Pruebas de Datos e-CF</div>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">3</div>
+            </div>
+            <div>
+              <div class="title">Pruebas de Datos Aprobación Comercial</div>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">4</div>
+            </div>
+            <div>
+              <div class="title">Pruebas Simulación e-CF</div>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">5</div>
+            </div>
+            <div>
+              <div class="title">
+                Pruebas Simulación Representación Impresa
               </div>
             </div>
-            <div class="step">
-              <div>
-                <div class="circle">2</div>
-              </div>
-              <div>
-                <div class="title">Pruebas de Datos e-CF</div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">6</div>
+            </div>
+            <div>
+              <div class="title">Validación Representación Impresa</div>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">7</div>
+            </div>
+            <div>
+              <div class="title">URL Servicios Prueba</div>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">8</div>
+            </div>
+            <div>
+              <div class="title">Inicio Prueba Recepción e-CF</div>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">9</div>
+            </div>
+            <div>
+              <div class="title">Recepción e-CF</div>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">10</div>
+            </div>
+            <div>
+              <div class="title">
+                Inicio Prueba Recepción Aprobación Comercial
               </div>
             </div>
-            <div class="step">
-              <div>
-                <div class="circle">3</div>
-              </div>
-              <div>
-                <div class="title">Pruebas de Datos Aprobación Comercial</div>
-              </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">11</div>
             </div>
-            <div class="step">
-              <div>
-                <div class="circle">4</div>
-              </div>
-              <div>
-                <div class="title">Pruebas Simulación e-CF</div>
-              </div>
+            <div>
+              <div class="title">Recepción Aprobación Comercial</div>
             </div>
-            <div class="step">
-              <div>
-                <div class="circle">5</div>
-              </div>
-              <div>
-                <div class="title">
-                  Pruebas Simulación Representación Impresa
-                </div>
-              </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">12</div>
             </div>
-            <div class="step">
-              <div>
-                <div class="circle">6</div>
-              </div>
-              <div>
-                <div class="title">Validación Representación Impresa</div>
-              </div>
+            <div>
+              <div class="title">URL Servicios Producción</div>
             </div>
-            <div class="step">
-              <div>
-                <div class="circle">7</div>
-              </div>
-              <div>
-                <div class="title">URL Servicios Prueba</div>
-              </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">13</div>
             </div>
-            <div class="step">
-              <div>
-                <div class="circle">8</div>
-              </div>
-              <div>
-                <div class="title">Inicio Prueba Recepción e-CF</div>
-              </div>
+            <div>
+              <div class="title">Declaración Jurada</div>
             </div>
-            <div class="step">
-              <div>
-                <div class="circle">9</div>
-              </div>
-              <div>
-                <div class="title">Recepción e-CF</div>
-              </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">14</div>
             </div>
-            <div class="step">
-              <div>
-                <div class="circle">10</div>
-              </div>
-              <div>
-                <div class="title">
-                  Inicio Prueba Recepción Aprobación Comercial
-                </div>
-              </div>
+            <div>
+              <div class="title">Verificación Estatus</div>
             </div>
-            <div class="step">
-              <div>
-                <div class="circle">11</div>
-              </div>
-              <div>
-                <div class="title">Recepción Aprobación Comercial</div>
-              </div>
+          </div>
+          <div class="step">
+            <div>
+              <div class="circle">15</div>
             </div>
-            <div class="step">
-              <div>
-                <div class="circle">12</div>
-              </div>
-              <div>
-                <div class="title">URL Servicios Producción</div>
-              </div>
+            <div>
+              <div class="title">Finalizado</div>
             </div>
-            <div class="step">
-              <div>
-                <div class="circle">13</div>
-              </div>
-              <div>
-                <div class="title">Declaración Jurada</div>
-              </div>
-            </div>
-            <div class="step">
-              <div>
-                <div class="circle">14</div>
-              </div>
-              <div>
-                <div class="title">Verificación Estatus</div>
-              </div>
-            </div>
-            <div class="step">
-              <div>
-                <div class="circle">15</div>
-              </div>
-              <div>
-                <div class="title">Finalizado</div>
-              </div>
-            </div>
-            <button type="button" class="btn btn-danger" id="btnCancelarPostulacion"
-              data-target="#modalCancelarPostulacion" data-toggle="modal" style="margin-top: 15px">
-              Cancelar Postulación
-            </button>
-            <!--modal Cancelar Postulacion-->
-            <div id="modalCancelarPostulacion" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"
-              data-backdrop="static" data-keyboard="false">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header" style="background-color: green; color: white">
-                    <div class="container">
-                      <div class="text-center">
-                        <h5 class="d-block">Cancelar Postulación</h5>
-                      </div>
+          </div>
+          <button type="button" class="btn btn-danger" id="btnCancelarPostulacion"
+            data-target="#modalCancelarPostulacion" data-toggle="modal" style="margin-top: 15px">
+            Cancelar Postulación
+          </button>
+          <!--modal Cancelar Postulacion-->
+          <div id="modalCancelarPostulacion" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"
+            data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: green; color: white">
+                  <div class="container">
+                    <div class="text-center">
+                      <h5 class="d-block">Cancelar Postulación</h5>
                     </div>
                   </div>
-                  <div class="modal-body">
-                    <div class="col-md-12">
-                      <div class="panel panel-default">
-                        <div class="panel-body">
-                          <div class="text-center">
-                            <p style="font-weight: bold; font-size: 1.2rem">
-                              ¿Está seguro que desea cancelar la postulación?
-                            </p>
-                            <div class="panel-body">
-                              <form id="frmCancelarPostulacion" method="post" action="#">
-                                <select class="form-control" id="dropMotivoCancelacion" name="dropMotivoCancelacion">
-                                  <option value="" selected="selected">
-                                    --------- Seleccione ---------
-                                  </option>
-                                  <option value="1">
-                                    Cambio de Representante
-                                  </option>
-                                  <option value="2">
-                                    Proceso de Certificación con Proveedor
-                                  </option>
-                                  <option value="3">
-                                    Proceso de Certificación sin Proveedor
-                                  </option>
-                                  <option value="4">
-                                    Cambio de Proveedor
-                                  </option>
-                                  <option value="5">
-                                    Información Errónea del Proveedor
-                                  </option>
-                                </select>
-                                <span id="MensajeRespuesta" style="color: red"></span>
-                                <br />
-                                <div class="modal-footer">
-                                  <div class="col-md-12">
-                                    <button type="button" class="btn btn-outline-danger btn-rounded"
-                                      id="btnSalirCancelarPostulacion" data-dismiss="modal" aria-hidden="true">
-                                      Cancelar
-                                    </button>
-                                    <button type="submit" style="margin-left: 44%"
-                                      class="btn btn-outline-success btn-rounded" id="btnConfirmPostulacionCancelada">
-                                      Aceptar
-                                    </button>
-                                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="col-md-12">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <div class="text-center">
+                          <p style="font-weight: bold; font-size: 1.2rem">
+                            ¿Está seguro que desea cancelar la postulación?
+                          </p>
+                          <div class="panel-body">
+                            <form id="frmCancelarPostulacion" method="post" action="#">
+                              <select class="form-control" id="dropMotivoCancelacion" name="dropMotivoCancelacion">
+                                <option value="" selected="selected">
+                                  --------- Seleccione ---------
+                                </option>
+                                <option value="1">
+                                  Cambio de Representante
+                                </option>
+                                <option value="2">
+                                  Proceso de Certificación con Proveedor
+                                </option>
+                                <option value="3">
+                                  Proceso de Certificación sin Proveedor
+                                </option>
+                                <option value="4">
+                                  Cambio de Proveedor
+                                </option>
+                                <option value="5">
+                                  Información Errónea del Proveedor
+                                </option>
+                              </select>
+                              <span id="MensajeRespuesta" style="color: red"></span>
+                              <br />
+                              <div class="modal-footer">
+                                <div class="col-md-12">
+                                  <button type="button" class="btn btn-outline-danger btn-rounded"
+                                    id="btnSalirCancelarPostulacion" data-dismiss="modal" aria-hidden="true">
+                                    Cancelar
+                                  </button>
+                                  <button type="submit" style="margin-left: 44%"
+                                    class="btn btn-outline-success btn-rounded" id="btnConfirmPostulacionCancelada">
+                                    Aceptar
+                                  </button>
                                 </div>
-                                <input name="__RequestVerificationToken" type="hidden"
-                                  value="CfDJ8HW6uwko4x9Nvs8khcRhUIZ24AyaW-c8Jk6DuLSgaf3RtR9DNsaLRy0h5Zn7vxGZO8OiG26RYXN1w37IFhYJrzvjMElsD9ipcs7tDQCncjlthO9z7Yk6V0mQ3GbwwBs71AISImZoxiwomLnXcZ3mxenwiQz0FjRoOd7-IbdRGJE7mMMQrhyyXErqY91A_XlExA" />
-                              </form>
-                            </div>
+                              </div>
+                              <input name="__RequestVerificationToken" type="hidden"
+                                value="CfDJ8HW6uwko4x9Nvs8khcRhUIZ24AyaW-c8Jk6DuLSgaf3RtR9DNsaLRy0h5Zn7vxGZO8OiG26RYXN1w37IFhYJrzvjMElsD9ipcs7tDQCncjlthO9z7Yk6V0mQ3GbwwBs71AISImZoxiwomLnXcZ3mxenwiQz0FjRoOd7-IbdRGJE7mMMQrhyyXErqY91A_XlExA" />
+                            </form>
                           </div>
                         </div>
                       </div>
@@ -517,55 +501,55 @@
                 </div>
               </div>
             </div>
-            <!--modal Retonar Postulacion-->
-            <div id="modalRetornarPostulacion" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"
-              data-backdrop="static" data-keyboard="false">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header" style="background-color: green; color: white">
-                    <div class="container">
-                      <div class="text-center">
-                        <h5 class="d-block">Confirmación Retorno de Paso</h5>
-                      </div>
+          </div>
+          <!--modal Retonar Postulacion-->
+          <div id="modalRetornarPostulacion" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"
+            data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: green; color: white">
+                  <div class="container">
+                    <div class="text-center">
+                      <h5 class="d-block">Confirmación Retorno de Paso</h5>
                     </div>
                   </div>
-                  <div class="modal-body">
-                    <div class="col-md-12">
-                      <div class="panel panel-default">
-                        <div class="panel-body">
-                          <div class="text-center">
-                            <p style="font-weight: bold; font-size: 1.2rem">
-                              ¿Está seguro que desea retornar la postulación
-                              al paso previo?
-                            </p>
-                            <div class="panel-body">
-                              <form id="frmRetornarPostulacion" method="post"
-                                action="/certecf/portalcertificacion/Postulacion/Retornar">
-                                <fieldset>
-                                  <div class="form-group">
-                                    <textarea class="form-control input-lg" name="motivo"
-                                      placeholder="Ingresar Justificación" id="txtMotivoR"></textarea>
-                                  </div>
-                                </fieldset>
-                                <input id="IdEstado" hidden="" value="Registrado" />
-                                <span id="MensajeRespuestaR" style="color: red"></span>
-                                <br />
-                                <div class="modal-footer">
-                                  <div class="col-md-12">
-                                    <button type="button" class="btn btn-outline-danger btn-rounded"
-                                      id="btnSalirRetornarPostulacion" data-dismiss="modal" aria-hidden="true">
-                                      Cancelar
-                                    </button>
-                                    <button type="submit" style="margin-left: 44%"
-                                      class="btn btn-outline-success btn-rounded" id="btnConfirmRetorno">
-                                      Aceptar
-                                    </button>
-                                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="col-md-12">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <div class="text-center">
+                          <p style="font-weight: bold; font-size: 1.2rem">
+                            ¿Está seguro que desea retornar la postulación
+                            al paso previo?
+                          </p>
+                          <div class="panel-body">
+                            <form id="frmRetornarPostulacion" method="post"
+                              action="/certecf/portalcertificacion/Postulacion/Retornar">
+                              <fieldset>
+                                <div class="form-group">
+                                  <textarea class="form-control input-lg" name="motivo"
+                                    placeholder="Ingresar Justificación" id="txtMotivoR"></textarea>
                                 </div>
-                                <input name="__RequestVerificationToken" type="hidden"
-                                  value="CfDJ8HW6uwko4x9Nvs8khcRhUIZ24AyaW-c8Jk6DuLSgaf3RtR9DNsaLRy0h5Zn7vxGZO8OiG26RYXN1w37IFhYJrzvjMElsD9ipcs7tDQCncjlthO9z7Yk6V0mQ3GbwwBs71AISImZoxiwomLnXcZ3mxenwiQz0FjRoOd7-IbdRGJE7mMMQrhyyXErqY91A_XlExA" />
-                              </form>
-                            </div>
+                              </fieldset>
+                              <input id="IdEstado" hidden="" value="Registrado" />
+                              <span id="MensajeRespuestaR" style="color: red"></span>
+                              <br />
+                              <div class="modal-footer">
+                                <div class="col-md-12">
+                                  <button type="button" class="btn btn-outline-danger btn-rounded"
+                                    id="btnSalirRetornarPostulacion" data-dismiss="modal" aria-hidden="true">
+                                    Cancelar
+                                  </button>
+                                  <button type="submit" style="margin-left: 44%"
+                                    class="btn btn-outline-success btn-rounded" id="btnConfirmRetorno">
+                                    Aceptar
+                                  </button>
+                                </div>
+                              </div>
+                              <input name="__RequestVerificationToken" type="hidden"
+                                value="CfDJ8HW6uwko4x9Nvs8khcRhUIZ24AyaW-c8Jk6DuLSgaf3RtR9DNsaLRy0h5Zn7vxGZO8OiG26RYXN1w37IFhYJrzvjMElsD9ipcs7tDQCncjlthO9z7Yk6V0mQ3GbwwBs71AISImZoxiwomLnXcZ3mxenwiQz0FjRoOd7-IbdRGJE7mMMQrhyyXErqY91A_XlExA" />
+                            </form>
                           </div>
                         </div>
                       </div>
@@ -577,473 +561,467 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-9 col-sm-12" id="mainColumn">
-        <main role="main" class="pb-3">
-          <input type="hidden" id="rncAutenticado" value="124000000" />
-          <div class="shadow-sm p-3 mb-5 bg-white rounded">
-            <p class="lead">
-              Paso 1:
-              <b>Formulario de postulación de contribuyente como emisor
-                electrónico y proveedor de servicios de software.</b>
-            </p>
-            <div id="alertGloboInfo" class="alert alert-info" role="alert">
-              <i class="fas fa-info-circle fa-fw"></i> Etapa en la que podrá
-              visualizar su registro previo y proceder a completar la
-              postulación cargando la misma firmada por el representante
-              registrado. Para más información sobre los tipos de
-              comprobantes, favor acceder a la documentación en el portal
-              <a id="enlAquíGlobo" target="_blank" href="#">aquí</a>.
-            </div>
-            <hr />
+    </div>
+    <div class="col-xl-9 col-sm-12" id="mainColumn">
+      <main role="main" class="pb-3">
+        <input type="hidden" id="rncAutenticado" value="124000000" />
+        <div class="shadow-sm p-3 mb-5 bg-white rounded">
+          <p class="lead">
+            Paso 1:
+            <b>Formulario de postulación de contribuyente como emisor
+              electrónico y proveedor de servicios de software.</b>
+          </p>
+          <div id="alertGloboInfo" class="alert alert-info" role="alert">
+            <i class="fas fa-info-circle fa-fw"></i> Etapa en la que podrá
+            visualizar su registro previo y proceder a completar la
+            postulación cargando la misma firmada por el representante
+            registrado. Para más información sobre los tipos de
+            comprobantes, favor acceder a la documentación en el portal
+            <a id="enlAquíGlobo" target="_blank" href="#">aquí</a>.
+          </div>
+          <hr />
 
-            <div id="AlertarRepresentanteErrores" hidden="hidden" class="form-row">
-              <div class="alert alert-danger" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">×</span>
-                </button>
-                <p>
-                  <i class="fas fa-exclamation-triangle"></i> Los datos
-                  resaltados en color rojo son necesarios para poder continuar
-                  con la postulación.
-                </p>
+          <div id="AlertarRepresentanteErrores" hidden="hidden" class="form-row">
+            <div class="alert alert-danger" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+              <p>
+                <i class="fas fa-exclamation-triangle"></i> Los datos
+                resaltados en color rojo son necesarios para poder continuar
+                con la postulación.
+              </p>
 
-                <p>
-                  Si el registro del representante seleccionado se encuentra
-                  desactualizado, favor informarle actualizarlo previamente en
-                  registro por su Oficina Virtual (OFV) y de necesitar
-                  asistencia para los fines o más información al respecto,
-                  dirigirsea su Administración Local, llamar al teléfono (809)
-                  689-3444 o escribirnos a
-                  <a style="color: dodgerblue">facturacionelectronica@dgii.gov.do.</a>
-                </p>
-                <p>
-                  Una vez actualizado, podrá volver a acá para visualizar los
-                  datos, hacer clic en “GENERAR ARCHIVO” y continuar con el
-                  proceso.
-                </p>
-              </div>
-            </div>
-            <div id="AlertarSoftwareErrores" hidden="hidden" class="form-row">
-              <div class="alert alert-danger alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">×</span>
-                </button>
-                <strong></strong>
-                <p>Favor completar los datos requeridos.</p>
-              </div>
-            </div>
-            <div class="container">
-              <form id="frmRegistrado" enctype="multipart/form-data" action="./XMLs/202509281140417.xml" method="get"
-                novalidate="novalidate">
-                <span class="h6"><i class="fas fa-user-alt fa-fw"></i> Datos del
-                  contribuyente.</span>
-                <hr />
-                <div class="form-row">
-                  <input type="hidden" class="form-control" data-val="true"
-                    data-val-number="The field PostulacionID must be a number."
-                    data-val-required="The PostulacionID field is required." id="PostulacionID" name="PostulacionID"
-                    value="14624" />
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputTipoRegistro" for="TipoRegistro">Tipo de registro</label>
-                    <select class="form-control tipoRegistroSelect" disabled="disabled" id="inputTipoRegistro"
-                      name="inputTipoRegistro">
-                      <option selected="selected" value="1">
-                        Facturador Electrónico
-                      </option>
-                      <option value="2">Proveedor de Software de FE</option>
-                    </select>
-
-                    <input id="inputTipoRegistro" type="hidden" class="form-control" data-val="true"
-                      data-val-required="Información requerida." name="TipoRegistro" value="1" />
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputTiposComprobantes" for="GrupoComprobante">Tipos de comprobantes</label>
-                    <input id="inputTiposComprobantes" disabled="disabled" class="form-control" type="text"
-                      data-val="true" data-val-required="Información requerida." name="GrupoComprobante"
-                      value="31,32,33,34,41,43,44,45,46,47" />
-                    <input id="inputTiposComprobantes" type="hidden" class="form-control" name="GrupoComprobante"
-                      value="31,32,33,34,41,43,44,45,46,47" />
-                  </div>
-                </div>
-                <div hidden="" class="form-row">
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label for="EsNuevaPostulacion">EsNuevaPostulacion</label>
-                    <input type="text" value="True" class="form-control" data-val="true"
-                      data-val-required="The EsNuevaPostulacion field is required." id="EsNuevaPostulacion"
-                      name="EsNuevaPostulacion" />
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputIDContribuyente" for="Contribuyente_RNCContribuyente">RNC/Cédula</label>
-                    <input id="inputIDContribuyente" disabled="disabled" class="form-control" type="text"
-                      data-val="true"
-                      data-val-length="El RNC/CÉDULA del contribuyente debe tener una longitud entre 9 y 11 caracteres"
-                      data-val-length-max="11" data-val-length-min="9" data-val-required="Información requerida."
-                      maxlength="11" name="Contribuyente.RNCContribuyente" value="124000000" />
-                    <input id="inputIDContribuyente" type="hidden" class="form-control"
-                      name="Contribuyente.RNCContribuyente" value="124000000" />
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputRazonSocialContribuyente" for="Contribuyente_RazonSocial">Razón social</label>
-                    <input id="inputRazonSocialContribuyente" disabled="disabled" class="form-control" type="text"
-                      data-val="true" data-val-required="Información requerida." name="Contribuyente.RazonSocial"
-                      value="NOVATECH SRL" />
-                    <input id="inputRazonSocialContribuyente" type="hidden" class="form-control"
-                      name="Contribuyente.RazonSocial" value="NOVATECH SRL" />
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputNombreComercialContribuyente" for="Contribuyente_NombreComercial">Nombre
-                      comercial</label>
-                    <input id="inputNombreComercialContribuyente" disabled="disabled" class="form-control" type="text"
-                      name="Contribuyente.NombreComercial" value="NOVATECH" />
-                    <input id="inputNombreComercialContribuyente" type="hidden" class="form-control"
-                      name="Contribuyente.NombreComercial" value="NOVATECH SRL" />
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputActividadEconomicaContribuyente" for="Contribuyente_ActividadEconomica">Actividad
-                      económica</label>
-                    <input id="inputActividadEconomicaContribuyente" disabled="disabled" class="form-control"
-                      type="text" data-val="true" data-val-required="Información requerida."
-                      name="Contribuyente.ActividadEconomica" value="SERVICIOS TECNOLÓGICOS Y DE INFORMÁTICA" />
-                    <input id="inputActividadEconomicaContribuyente" type="hidden" class="form-control"
-                      name="Contribuyente.ActividadEconomica" value="SERVICIOS DE ORGANIZACIÓN DE EVENTOS" />
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputTelefonoContribuyente" for="Contribuyente_Telefono">Teléfono</label>
-                    <input id="inputTelefonoContribuyente" disabled="disabled" class="form-control" type="text"
-                      data-val="true" data-val-required="Información requerida." name="Contribuyente.Telefono"
-                      value="8097322702" />
-                    <input id="inputTelefonoContribuyente" type="hidden" class="form-control"
-                      name="Contribuyente.Telefono" value="8097322702" />
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputCorreoContribuyente" for="Contribuyente_CorreoElectronico">Correo
-                      electrónico</label>
-                    <input id="inputCorreoContribuyente" disabled="disabled" class="form-control" type="text"
-                      data-val="true" data-val-required="Información requerida." name="Contribuyente.CorreoElectronico"
-                      value="INFO@NOVATECHINT.COM" />
-                    <input id="inputCorreoContribuyente" type="hidden" class="form-control"
-                      name="Contribuyente.CorreoElectronico" value="INFO@NOVATECHINT.COM" />
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputDireccionContribuyente" for="Contribuyente_Direccion">Dirección</label>
-                    <input id="inputDireccionContribuyente" disabled="disabled" class="form-control" type="text"
-                      data-val="true" data-val-required="Información requerida." name="Contribuyente.Direccion"
-                      value="CARLOS PEREZ RICARD ARROYO HONDO 2" />
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputProvinciaContribuyente" for="Contribuyente_Provincia">Provincia</label>
-                    <input id="inputProvinciaContribuyente" disabled="disabled" class="form-control" type="text"
-                      data-val="true" data-val-required="Información requerida." name="Contribuyente.Provincia"
-                      value="DISTRITO NACIONAL" />
-                    <input id="inputProvinciaContribuyente" type="hidden" class="form-control"
-                      name="Contribuyente.Provincia" value="DISTRITO NACIONAL" />
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputMunicipioContribuyente" for="Contribuyente_Municipio">Municipio</label>
-                    <input id="inputMunicipioContribuyente" disabled="disabled" class="form-control" type="text"
-                      data-val="true" data-val-required="Información requerida." name="Contribuyente.Municipio"
-                      value="DISTRITO NACIONAL" />
-                    <input id="inputMunicipioContribuyente" type="hidden" class="form-control"
-                      name="Contribuyente.Municipio" value="DISTRITO NACIONAL" />
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputSectorContribuyente" for="Contribuyente_Sector">Sector</label>
-                    <input id="inputSectorContribuyente" disabled="disabled" class="form-control" type="text"
-                      data-val="true" data-val-required="Información requerida." name="Contribuyente.Sector"
-                      value="ARROYO HONDO" />
-                    <input id="inputSectorContribuyente" type="hidden" class="form-control" name="Contribuyente.Sector"
-                      value="ARROYO HONDO" />
-                  </div>
-                </div>
-                <br />
-                <span class="h6"><i class="fas fa-user-edit fa-fw"></i> Datos del
-                  representante.</span>
-                <hr />
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-12">
-                    <label>Representantes asociados:</label>
-                    <select id="RepresentanteAsociado" name="RepresentanteAsociado" class="form-control valid"
-                      aria-invalid="false">
-                      <option value="">
-                        - Seleccione alguno de los representantes disponibles
-                        -
-                      </option>
-                      <option value="00111057766" selected="selected">
-                        🤖 ATINA DE CASTRO
-                      </option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputIDRepresentante" for="Representante_RNCRepresentante">RNC/Cédula</label>
-                    <input id="inputIDRepresentante" disabled="disabled" class="form-control" type="text"
-                      data-val="true"
-                      data-val-length="El campo RNC/Cédula del representante debe tener una longitud de 11 caracteres"
-                      data-val-length-max="11" data-val-length-min="9" data-val-required="Información requerida."
-                      maxlength="11" name="Representante.RNCRepresentante" value="00100000000" />
-
-                    <a hidden="hidden" id="lblRncRepresentante" style="color: #e33545"
-                      title="Campo requerido">Información Requerida</a>
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputpasaporteRepresentante" for="Representante_PasaporteRepresentante">Pasaporte</label>
-                    <input id="inputpasaporteRepresentante" disabled="disabled" class="form-control" type="text"
-                      data-val="true"
-                      data-val-length="El Pasaporte del representante debe tener una longitud entre 7 y 20 caracteres"
-                      data-val-length-max="20" data-val-length-min="7" maxlength="20"
-                      name="Representante.PasaporteRepresentante" />
-                    <input id="inputpasaporteRepresentante" type="hidden" class="form-control"
-                      name="Representante.PasaporteRepresentante" value="" />
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputNombreRepresentante" for="Representante_NombreRepresentante">Nombre completo</label>
-                    <input id="inputNombreRepresentante" disabled="disabled" class="form-control" type="text"
-                      data-val="true" data-val-required="Información requerida."
-                      name="Representante.NombreRepresentante" value="ATINA DE CASTRO" />
-
-                    <a hidden="hidden" id="lblnombreRepresentante" style="color: #e33545"
-                      title="Campo requerido">Información Requerida</a>
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputTelefonoRepresentante" for="Representante_TelefonoRepresentante">Teléfono</label>
-                    <input id="inputTelefonoRepresentante" disabled="disabled" class="form-control" type="text"
-                      name="Representante.TelefonoRepresentante" />
-                    <input id="inputTelefonoRepresentante" type="hidden" class="form-control"
-                      name="Representante.TelefonoRepresentante" value="" />
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputCelularRepresentante" for="Representante_CelularRepresentante">Celular</label>
-                    <input id="inputCelularRepresentante" disabled="disabled" class="form-control" type="text"
-                      name="Representante.CelularRepresentante" />
-                    <input id="inputCelularRepresentante" type="hidden" class="form-control"
-                      name="Representante.CelularRepresentante" value="" />
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputDireccionRepresentante" for="Representante_DireccionRepresentante">Dirección</label>
-                    <input id="inputDireccionRepresentante" disabled="disabled" class="form-control" type="text"
-                      name="Representante.DireccionRepresentante" value="CARLOS PEREZ RICARD ARROYO HONDO 2 " />
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputProvinciaRepresentante" for="Representante_ProvinciaRepresentante">Provincia</label>
-                    <input id="inputProvinciaRepresentante" disabled="disabled" class="form-control" type="text"
-                      name="Representante.ProvinciaRepresentante" value="DISTRITO NACIONAL" />
-                    <input id="inputProvinciaRepresentante" type="hidden" class="form-control"
-                      name="Representante.ProvinciaRepresentante" value="DISTRITO NACIONAL" />
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputMunicipioRepresentante" for="Representante_MunicipioRepresentante">Municipio</label>
-                    <input id="inputMunicipioRepresentante" disabled="disabled" class="form-control" type="text"
-                      name="Representante.MunicipioRepresentante" />
-                    <input id="inputMunicipioRepresentante" type="hidden" class="form-control"
-                      name="Representante.MunicipioRepresentante" value="" />
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputSectorRepresentante" for="Representante_SectorRepresentante">Sector</label>
-                    <input id="inputSectorRepresentante" disabled="disabled" class="form-control" type="text"
-                      name="Representante.SectorRepresentante" value="ARROYO HONDO" />
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="inputCorreoRepresentante" for="Representante_CorreoElectronicoRepresentante">Correo
-                      electrónico</label>
-                    <input id="inputCorreoRepresentante" disabled="disabled" class="form-control" type="text"
-                      name="Representante.CorreoElectronicoRepresentante" value="adecastro@novatechint.com" />
-
-                    <a hidden="hidden" id="lblCorreoRepresentante" style="color: #e33545"
-                      title="Campo requerido">Información Requerida</a>
-                  </div>
-                </div>
-
-                <br />
-                <span class="h6"><i class="fas fa-cogs fa-fw"></i> Datos del software a
-                  utilizar.</span>
-                <hr />
-                <div class="form-row">
-                  <div class="form-group col-sm-12 col-md-6">
-                    <label id="listTipoSoftware" for="Software_TipoDesarrollo">Tipo de software</label>
-                    <select class="form-control tipoSoftwareSelect" id="ddlTipoDesarrollo"
-                      name="Software.TipoDesarrollo">
-                      <option selected="selected" value="1">PROPIO</option>
-                      <option value="0">EXTERNO</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6">
-                    <div class="col-sm-6 col-md-6" style="float: left">
-                      <label for="Software_NombreSoftware">Nombre del software</label><b style="color: red"
-                        title="Campo requerido">*</b>
-                      <input id="inputNombreSoftware" class="form-control" aria-describedby="inputGroup-sizing-sm"
-                        type="text" data-val="true" data-val-required="Información requerida."
-                        name="Software.NombreSoftware" />
-                      <a hidden="hidden" id="lblNombreSoftware" style="color: #e33545"
-                        title="Campo requerido">Información Requerida</a>
-                    </div>
-                    <div class="col-sm-6 col-md-6" style="float: right">
-                      <label for="Software_VersionSoftware">Versión del software</label><b style="color: red"
-                        title="Campo requerido">*</b>
-                      <input id="inputVersionSoftware" class="form-control" aria-describedby="inputGroup-sizing-sm"
-                        type="text" data-val="true" data-val-required="Información requerida."
-                        name="Software.VersionSoftware" />
-                      <a hidden="hidden" id="lblVersionSoftware" style="color: #e33545"
-                        title="Campo requerido">Información Requerida</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <label for="Software_UrlRecepcion">URL de recepción</label>
-                  <div class="input-group mb-4">
-                    <div class="input-group-append">
-                      <span id="inputEstandarInicialRecepcion" class="input-group-text">https://</span>
-                    </div>
-                    <input id="inputUrlRecepcion" class="form-control" type="text" name="Software.UrlRecepcion" />
-                    <div class="input-group-append">
-                      <div id="inputEstandarFinalRecepcion" class="input-group-text">
-                        /fe/recepcion/api/ecf
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <label for="Software_UrlAprobacionComercial">URL de aprobación comercial</label>
-                  <div class="input-group mb-3">
-                    <div class="input-group-append">
-                      <div id="inputEstandarInicialAprobacionComercial" class="input-group-text">
-                        https://
-                      </div>
-                    </div>
-                    <input id="inputUrlAprobacionComercial" class="form-control" type="text"
-                      name="Software.UrlAprobacionComercial" />
-                    <div class="input-group-append">
-                      <div id="inputEstandarFinalAprobacionComercial" class="input-group-text">
-                        /fe/aprobacioncomercial/api/ecf
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <label for="Software_UrlAutenticacion">URL de autenticación</label>
-                  <div class="input-group mb-3">
-                    <div class="input-group-append">
-                      <div id="inputEstandarInicialAutenticacion" class="input-group-text">
-                        https://
-                      </div>
-                    </div>
-                    <input id="inputUrlAutenticacion" class="form-control" type="text"
-                      name="Software.UrlAutenticacion" />
-                    <div class="input-group-append">
-                      <div id="inputEstandarFinaAutenticacion" class="input-group-text">
-                        /fe/autenticacion/api/[semilla|validacioncertificado]
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <div class="d-none" id="proveedorFields">
-                  <span class="h6"><i class="fas fa-user-cog fa-fw"></i> Datos del
-                    proveedor.</span>
-                  <hr />
-                  <div class="form-row">
-                    <div class="form-group col-sm-12 col-md-6">
-                      <label for="Software_Proveedor_RNCProveedor">RNC/Cédula</label><b style="color: red"
-                        title="Campo requerido">*</b>
-                      <input class="form-control" id="inputRncProveedor" type="text" data-val="true"
-                        data-val-length="El RNC/CÉDULA del contribuyente debe tener una longitud entre 9 y 11 caracteres"
-                        data-val-length-max="11" data-val-length-min="9"
-                        data-val-required="El RNC/Cédula requiere 9 u 11 dígitos" maxlength="11"
-                        name="Software.Proveedor.RNCProveedor" />
-                      <a hidden="hidden" id="lblRncProveedorSoftware" style="color: #e33545" title="Campo requerido">El
-                        RNC/Cédula requiere 9 u 11 dígitos</a>
-                    </div>
-                    <div class="form-group col-sm-12 col-md-6">
-                      <label for="Software_Proveedor_RazonSocialProveedor">Nombre/Razón social</label><b
-                        style="color: red" title="Campo requerido">*</b>
-                      <input style="text-transform: uppercase" class="form-control" id="inputRazonSocialProveedor"
-                        type="text" data-val="true" data-val-required="Información requerida."
-                        name="Software.Proveedor.RazonSocialProveedor" />
-                      <a hidden="hidden" id="lblRazonSocialProveedorSoftware" style="color: #e33545"
-                        title="Campo requerido">Información Requerida</a>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-sm-12 col-md-6">
-                      <label>Nombre comercial</label>
-                      <input class="form-control" id="inputNombreComercialProveedor" style="text-transform: uppercase"
-                        type="text" name="Software.Proveedor.NombreComercialProveedor" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row justify-content-end">
-                  <a href="./XMLs/202509281140417.xml" download="202509281140417.xml"
-                    class="btn btn-success btn-rounded">
-                    <i class="fas fa-file-download fa-fw"></i> Generar archivo
-                  </a>
-                  <button id="btnGenerarArchivo" type="submit" style="display: none"
-                    class="btn btn-success btn-rounded">
-                    <i class="fas fa-file-download fa-fw"></i> Generar Archivo
-                  </button>
-                </div>
-                <div id="AlertarRepresentante" class="form-row" style="display: none">
-                  <br />
-                  <p class="textoInformativo">
-                    <b>Favor seleccionar un representante para su postulación,
-                      en caso de no tener disponible, contacte a nuestro
-                      Centro de Contacto DGII al (809) 689-3444 Santo Domingo,
-                      o puede escribir al siguiente correo:</b>
-                    <b style="color: dodgerblue">informacion@dgii.gov.do</b>
-                  </p>
-                </div>
-                <input name="__RequestVerificationToken" type="hidden"
-                  value="CfDJ8HW6uwko4x9Nvs8khcRhUIZ24AyaW-c8Jk6DuLSgaf3RtR9DNsaLRy0h5Zn7vxGZO8OiG26RYXN1w37IFhYJrzvjMElsD9ipcs7tDQCncjlthO9z7Yk6V0mQ3GbwwBs71AISImZoxiwomLnXcZ3mxenwiQz0FjRoOd7-IbdRGJE7mMMQrhyyXErqY91A_XlExA" />
-              </form>
+              <p>
+                Si el registro del representante seleccionado se encuentra
+                desactualizado, favor informarle actualizarlo previamente en
+                registro por su Oficina Virtual (OFV) y de necesitar
+                asistencia para los fines o más información al respecto,
+                dirigirsea su Administración Local, llamar al teléfono (809)
+                689-3444 o escribirnos a
+                <a style="color: dodgerblue">facturacionelectronica@dgii.gov.do.</a>
+              </p>
+              <p>
+                Una vez actualizado, podrá volver a acá para visualizar los
+                datos, hacer clic en “GENERAR ARCHIVO” y continuar con el
+                proceso.
+              </p>
             </div>
           </div>
-          <div class="shadow-sm p-3 mb-5 bg-white rounded">
-            <p class="lead">Envío de archivo de postulación firmado</p>
+          <div id="AlertarSoftwareErrores" hidden="hidden" class="form-row">
+            <div class="alert alert-danger alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+              <strong></strong>
+              <p>Favor completar los datos requeridos.</p>
+            </div>
+          </div>
+          <div class="container">
+            <form id="frmRegistrado" enctype="multipart/form-data" action="./XMLs/202509281140417.xml" method="get"
+              novalidate="novalidate">
+              <span class="h6"><i class="fas fa-user-alt fa-fw"></i> Datos del
+                contribuyente.</span>
+              <hr />
+              <div class="form-row">
+                <input type="hidden" class="form-control" data-val="true"
+                  data-val-number="The field PostulacionID must be a number."
+                  data-val-required="The PostulacionID field is required." id="PostulacionID" name="PostulacionID"
+                  value="14624" />
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputTipoRegistro" for="TipoRegistro">Tipo de registro</label>
+                  <select class="form-control tipoRegistroSelect" disabled="disabled" id="inputTipoRegistro"
+                    name="inputTipoRegistro">
+                    <option selected="selected" value="1">
+                      Facturador Electrónico
+                    </option>
+                    <option value="2">Proveedor de Software de FE</option>
+                  </select>
 
-            <hr />
-            <div class="container">
-              <form enctype="multipart/form-data" action="/certecf/portalcertificacion/Postulacion/Guardar"
-                method="post">
-                <input type="hidden" id="nuevaPostulacion" name="nuevaPostulacion" />
-                <div class="form-row">
-                  <div class="col-sm-12 col-md-6">
-                    <label>XML</label>
-                    <div class="custom-file">
-                      <input id="uploadArchivoFirmado" type="file" class="form-control custom-file-input" name="xml" />
-                      <label class="custom-file-label" for="xml">Elegir archivo</label>
-                      <span class="text-danger invalid-feedback field-validation-valid" data-valmsg-for="xml"
-                        data-valmsg-replace="true"></span>
+                  <input id="inputTipoRegistro" type="hidden" class="form-control" data-val="true"
+                    data-val-required="Información requerida." name="TipoRegistro" value="1" />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputTiposComprobantes" for="GrupoComprobante">Tipos de comprobantes</label>
+                  <input id="inputTiposComprobantes" disabled="disabled" class="form-control" type="text"
+                    data-val="true" data-val-required="Información requerida." name="GrupoComprobante"
+                    value="31,32,33,34,41,43,44,45,46,47" />
+                  <input id="inputTiposComprobantes" type="hidden" class="form-control" name="GrupoComprobante"
+                    value="31,32,33,34,41,43,44,45,46,47" />
+                </div>
+              </div>
+              <div hidden="" class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="EsNuevaPostulacion">EsNuevaPostulacion</label>
+                  <input type="text" value="True" class="form-control" data-val="true"
+                    data-val-required="The EsNuevaPostulacion field is required." id="EsNuevaPostulacion"
+                    name="EsNuevaPostulacion" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputIDContribuyente" for="Contribuyente_RNCContribuyente">RNC/Cédula</label>
+                  <input id="inputIDContribuyente" disabled="disabled" class="form-control" type="text" data-val="true"
+                    data-val-length="El RNC/CÉDULA del contribuyente debe tener una longitud entre 9 y 11 caracteres"
+                    data-val-length-max="11" data-val-length-min="9" data-val-required="Información requerida."
+                    maxlength="11" name="Contribuyente.RNCContribuyente" value="124000000" />
+                  <input id="inputIDContribuyente" type="hidden" class="form-control"
+                    name="Contribuyente.RNCContribuyente" value="124000000" />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputRazonSocialContribuyente" for="Contribuyente_RazonSocial">Razón social</label>
+                  <input id="inputRazonSocialContribuyente" disabled="disabled" class="form-control" type="text"
+                    data-val="true" data-val-required="Información requerida." name="Contribuyente.RazonSocial"
+                    value="NOVATECH SRL" />
+                  <input id="inputRazonSocialContribuyente" type="hidden" class="form-control"
+                    name="Contribuyente.RazonSocial" value="NOVATECH SRL" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputNombreComercialContribuyente" for="Contribuyente_NombreComercial">Nombre
+                    comercial</label>
+                  <input id="inputNombreComercialContribuyente" disabled="disabled" class="form-control" type="text"
+                    name="Contribuyente.NombreComercial" value="NOVATECH" />
+                  <input id="inputNombreComercialContribuyente" type="hidden" class="form-control"
+                    name="Contribuyente.NombreComercial" value="NOVATECH SRL" />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputActividadEconomicaContribuyente" for="Contribuyente_ActividadEconomica">Actividad
+                    económica</label>
+                  <input id="inputActividadEconomicaContribuyente" disabled="disabled" class="form-control" type="text"
+                    data-val="true" data-val-required="Información requerida." name="Contribuyente.ActividadEconomica"
+                    value="SERVICIOS TECNOLÓGICOS Y DE INFORMÁTICA" />
+                  <input id="inputActividadEconomicaContribuyente" type="hidden" class="form-control"
+                    name="Contribuyente.ActividadEconomica" value="SERVICIOS DE ORGANIZACIÓN DE EVENTOS" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputTelefonoContribuyente" for="Contribuyente_Telefono">Teléfono</label>
+                  <input id="inputTelefonoContribuyente" disabled="disabled" class="form-control" type="text"
+                    data-val="true" data-val-required="Información requerida." name="Contribuyente.Telefono"
+                    value="8097322702" />
+                  <input id="inputTelefonoContribuyente" type="hidden" class="form-control"
+                    name="Contribuyente.Telefono" value="8097322702" />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputCorreoContribuyente" for="Contribuyente_CorreoElectronico">Correo
+                    electrónico</label>
+                  <input id="inputCorreoContribuyente" disabled="disabled" class="form-control" type="text"
+                    data-val="true" data-val-required="Información requerida." name="Contribuyente.CorreoElectronico"
+                    value="INFO@NOVATECHINT.COM" />
+                  <input id="inputCorreoContribuyente" type="hidden" class="form-control"
+                    name="Contribuyente.CorreoElectronico" value="INFO@NOVATECHINT.COM" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputDireccionContribuyente" for="Contribuyente_Direccion">Dirección</label>
+                  <input id="inputDireccionContribuyente" disabled="disabled" class="form-control" type="text"
+                    data-val="true" data-val-required="Información requerida." name="Contribuyente.Direccion"
+                    value="CARLOS PEREZ RICARD ARROYO HONDO 2" />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputProvinciaContribuyente" for="Contribuyente_Provincia">Provincia</label>
+                  <input id="inputProvinciaContribuyente" disabled="disabled" class="form-control" type="text"
+                    data-val="true" data-val-required="Información requerida." name="Contribuyente.Provincia"
+                    value="DISTRITO NACIONAL" />
+                  <input id="inputProvinciaContribuyente" type="hidden" class="form-control"
+                    name="Contribuyente.Provincia" value="DISTRITO NACIONAL" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputMunicipioContribuyente" for="Contribuyente_Municipio">Municipio</label>
+                  <input id="inputMunicipioContribuyente" disabled="disabled" class="form-control" type="text"
+                    data-val="true" data-val-required="Información requerida." name="Contribuyente.Municipio"
+                    value="DISTRITO NACIONAL" />
+                  <input id="inputMunicipioContribuyente" type="hidden" class="form-control"
+                    name="Contribuyente.Municipio" value="DISTRITO NACIONAL" />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputSectorContribuyente" for="Contribuyente_Sector">Sector</label>
+                  <input id="inputSectorContribuyente" disabled="disabled" class="form-control" type="text"
+                    data-val="true" data-val-required="Información requerida." name="Contribuyente.Sector"
+                    value="ARROYO HONDO" />
+                  <input id="inputSectorContribuyente" type="hidden" class="form-control" name="Contribuyente.Sector"
+                    value="ARROYO HONDO" />
+                </div>
+              </div>
+              <br />
+              <span class="h6"><i class="fas fa-user-edit fa-fw"></i> Datos del
+                representante.</span>
+              <hr />
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-12">
+                  <label>Representantes asociados:</label>
+                  <select id="RepresentanteAsociado" name="RepresentanteAsociado" class="form-control valid"
+                    aria-invalid="false">
+                    <option value="">
+                      - Seleccione alguno de los representantes disponibles
+                      -
+                    </option>
+                    <option value="00111057766" selected="selected">
+                      🤖 ATINA DE CASTRO
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputIDRepresentante" for="Representante_RNCRepresentante">RNC/Cédula</label>
+                  <input id="inputIDRepresentante" disabled="disabled" class="form-control" type="text" data-val="true"
+                    data-val-length="El campo RNC/Cédula del representante debe tener una longitud de 11 caracteres"
+                    data-val-length-max="11" data-val-length-min="9" data-val-required="Información requerida."
+                    maxlength="11" name="Representante.RNCRepresentante" value="00100000000" />
+
+                  <a hidden="hidden" id="lblRncRepresentante" style="color: #e33545" title="Campo requerido">Información
+                    Requerida</a>
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputpasaporteRepresentante" for="Representante_PasaporteRepresentante">Pasaporte</label>
+                  <input id="inputpasaporteRepresentante" disabled="disabled" class="form-control" type="text"
+                    data-val="true"
+                    data-val-length="El Pasaporte del representante debe tener una longitud entre 7 y 20 caracteres"
+                    data-val-length-max="20" data-val-length-min="7" maxlength="20"
+                    name="Representante.PasaporteRepresentante" />
+                  <input id="inputpasaporteRepresentante" type="hidden" class="form-control"
+                    name="Representante.PasaporteRepresentante" value="" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputNombreRepresentante" for="Representante_NombreRepresentante">Nombre completo</label>
+                  <input id="inputNombreRepresentante" disabled="disabled" class="form-control" type="text"
+                    data-val="true" data-val-required="Información requerida." name="Representante.NombreRepresentante"
+                    value="ATINA DE CASTRO" />
+
+                  <a hidden="hidden" id="lblnombreRepresentante" style="color: #e33545"
+                    title="Campo requerido">Información Requerida</a>
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputTelefonoRepresentante" for="Representante_TelefonoRepresentante">Teléfono</label>
+                  <input id="inputTelefonoRepresentante" disabled="disabled" class="form-control" type="text"
+                    name="Representante.TelefonoRepresentante" />
+                  <input id="inputTelefonoRepresentante" type="hidden" class="form-control"
+                    name="Representante.TelefonoRepresentante" value="" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputCelularRepresentante" for="Representante_CelularRepresentante">Celular</label>
+                  <input id="inputCelularRepresentante" disabled="disabled" class="form-control" type="text"
+                    name="Representante.CelularRepresentante" />
+                  <input id="inputCelularRepresentante" type="hidden" class="form-control"
+                    name="Representante.CelularRepresentante" value="" />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputDireccionRepresentante" for="Representante_DireccionRepresentante">Dirección</label>
+                  <input id="inputDireccionRepresentante" disabled="disabled" class="form-control" type="text"
+                    name="Representante.DireccionRepresentante" value="CARLOS PEREZ RICARD ARROYO HONDO 2 " />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputProvinciaRepresentante" for="Representante_ProvinciaRepresentante">Provincia</label>
+                  <input id="inputProvinciaRepresentante" disabled="disabled" class="form-control" type="text"
+                    name="Representante.ProvinciaRepresentante" value="DISTRITO NACIONAL" />
+                  <input id="inputProvinciaRepresentante" type="hidden" class="form-control"
+                    name="Representante.ProvinciaRepresentante" value="DISTRITO NACIONAL" />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputMunicipioRepresentante" for="Representante_MunicipioRepresentante">Municipio</label>
+                  <input id="inputMunicipioRepresentante" disabled="disabled" class="form-control" type="text"
+                    name="Representante.MunicipioRepresentante" />
+                  <input id="inputMunicipioRepresentante" type="hidden" class="form-control"
+                    name="Representante.MunicipioRepresentante" value="" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputSectorRepresentante" for="Representante_SectorRepresentante">Sector</label>
+                  <input id="inputSectorRepresentante" disabled="disabled" class="form-control" type="text"
+                    name="Representante.SectorRepresentante" value="ARROYO HONDO" />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="inputCorreoRepresentante" for="Representante_CorreoElectronicoRepresentante">Correo
+                    electrónico</label>
+                  <input id="inputCorreoRepresentante" disabled="disabled" class="form-control" type="text"
+                    name="Representante.CorreoElectronicoRepresentante" value="adecastro@novatechint.com" />
+
+                  <a hidden="hidden" id="lblCorreoRepresentante" style="color: #e33545"
+                    title="Campo requerido">Información Requerida</a>
+                </div>
+              </div>
+
+              <br />
+              <span class="h6"><i class="fas fa-cogs fa-fw"></i> Datos del software a
+                utilizar.</span>
+              <hr />
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label id="listTipoSoftware" for="Software_TipoDesarrollo">Tipo de software</label>
+                  <select class="form-control tipoSoftwareSelect" id="ddlTipoDesarrollo" name="Software.TipoDesarrollo">
+                    <option selected="selected" value="1">PROPIO</option>
+                    <option value="0">EXTERNO</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <div class="col-sm-6 col-md-6" style="float: left">
+                    <label for="Software_NombreSoftware">Nombre del software</label><b style="color: red"
+                      title="Campo requerido">*</b>
+                    <input id="inputNombreSoftware" class="form-control" aria-describedby="inputGroup-sizing-sm"
+                      type="text" data-val="true" data-val-required="Información requerida."
+                      name="Software.NombreSoftware" />
+                    <a hidden="hidden" id="lblNombreSoftware" style="color: #e33545" title="Campo requerido">Información
+                      Requerida</a>
+                  </div>
+                  <div class="col-sm-6 col-md-6" style="float: right">
+                    <label for="Software_VersionSoftware">Versión del software</label><b style="color: red"
+                      title="Campo requerido">*</b>
+                    <input id="inputVersionSoftware" class="form-control" aria-describedby="inputGroup-sizing-sm"
+                      type="text" data-val="true" data-val-required="Información requerida."
+                      name="Software.VersionSoftware" />
+                    <a hidden="hidden" id="lblVersionSoftware" style="color: #e33545"
+                      title="Campo requerido">Información Requerida</a>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="Software_UrlRecepcion">URL de recepción</label>
+                <div class="input-group mb-4">
+                  <div class="input-group-append">
+                    <span id="inputEstandarInicialRecepcion" class="input-group-text">https://</span>
+                  </div>
+                  <input id="inputUrlRecepcion" class="form-control" type="text" name="Software.UrlRecepcion" />
+                  <div class="input-group-append">
+                    <div id="inputEstandarFinalRecepcion" class="input-group-text">
+                      /fe/recepcion/api/ecf
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="form-row">
+                <label for="Software_UrlAprobacionComercial">URL de aprobación comercial</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-append">
+                    <div id="inputEstandarInicialAprobacionComercial" class="input-group-text">
+                      https://
+                    </div>
+                  </div>
+                  <input id="inputUrlAprobacionComercial" class="form-control" type="text"
+                    name="Software.UrlAprobacionComercial" />
+                  <div class="input-group-append">
+                    <div id="inputEstandarFinalAprobacionComercial" class="input-group-text">
+                      /fe/aprobacioncomercial/api/ecf
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="Software_UrlAutenticacion">URL de autenticación</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-append">
+                    <div id="inputEstandarInicialAutenticacion" class="input-group-text">
+                      https://
+                    </div>
+                  </div>
+                  <input id="inputUrlAutenticacion" class="form-control" type="text" name="Software.UrlAutenticacion" />
+                  <div class="input-group-append">
+                    <div id="inputEstandarFinaAutenticacion" class="input-group-text">
+                      /fe/autenticacion/api/[semilla|validacioncertificado]
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="d-none" id="proveedorFields">
+                <span class="h6"><i class="fas fa-user-cog fa-fw"></i> Datos del
+                  proveedor.</span>
+                <hr />
+                <div class="form-row">
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="Software_Proveedor_RNCProveedor">RNC/Cédula</label><b style="color: red"
+                      title="Campo requerido">*</b>
+                    <input class="form-control" id="inputRncProveedor" type="text" data-val="true"
+                      data-val-length="El RNC/CÉDULA del contribuyente debe tener una longitud entre 9 y 11 caracteres"
+                      data-val-length-max="11" data-val-length-min="9"
+                      data-val-required="El RNC/Cédula requiere 9 u 11 dígitos" maxlength="11"
+                      name="Software.Proveedor.RNCProveedor" />
+                    <a hidden="hidden" id="lblRncProveedorSoftware" style="color: #e33545" title="Campo requerido">El
+                      RNC/Cédula requiere 9 u 11 dígitos</a>
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="Software_Proveedor_RazonSocialProveedor">Nombre/Razón social</label><b
+                      style="color: red" title="Campo requerido">*</b>
+                    <input style="text-transform: uppercase" class="form-control" id="inputRazonSocialProveedor"
+                      type="text" data-val="true" data-val-required="Información requerida."
+                      name="Software.Proveedor.RazonSocialProveedor" />
+                    <a hidden="hidden" id="lblRazonSocialProveedorSoftware" style="color: #e33545"
+                      title="Campo requerido">Información Requerida</a>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label>Nombre comercial</label>
+                    <input class="form-control" id="inputNombreComercialProveedor" style="text-transform: uppercase"
+                      type="text" name="Software.Proveedor.NombreComercialProveedor" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-end">
+                <a href="./XMLs/202509281140417.xml" download="202509281140417.xml" class="btn btn-success btn-rounded">
+                  <i class="fas fa-file-download fa-fw"></i> Generar archivo
+                </a>
+                <button id="btnGenerarArchivo" type="submit" style="display: none" class="btn btn-success btn-rounded">
+                  <i class="fas fa-file-download fa-fw"></i> Generar Archivo
+                </button>
+              </div>
+              <div id="AlertarRepresentante" class="form-row" style="display: none">
                 <br />
-                <div class="row justify-content-end">
-                  <a id="EnviarArchivoFirmado" href="./2 Pruebas Certificación - Portal Certificacion.htm"
-                    class="btn btn-success btn-rounded" onclick="const f = document.getElementById('uploadArchivoFirmado');
+                <p class="textoInformativo">
+                  <b>Favor seleccionar un representante para su postulación,
+                    en caso de no tener disponible, contacte a nuestro
+                    Centro de Contacto DGII al (809) 689-3444 Santo Domingo,
+                    o puede escribir al siguiente correo:</b>
+                  <b style="color: dodgerblue">informacion@dgii.gov.do</b>
+                </p>
+              </div>
+              <input name="__RequestVerificationToken" type="hidden"
+                value="CfDJ8HW6uwko4x9Nvs8khcRhUIZ24AyaW-c8Jk6DuLSgaf3RtR9DNsaLRy0h5Zn7vxGZO8OiG26RYXN1w37IFhYJrzvjMElsD9ipcs7tDQCncjlthO9z7Yk6V0mQ3GbwwBs71AISImZoxiwomLnXcZ3mxenwiQz0FjRoOd7-IbdRGJE7mMMQrhyyXErqY91A_XlExA" />
+            </form>
+          </div>
+        </div>
+        <div class="shadow-sm p-3 mb-5 bg-white rounded">
+          <p class="lead">Envío de archivo de postulación firmado</p>
+
+          <hr />
+          <div class="container">
+            <form enctype="multipart/form-data" action="/certecf/portalcertificacion/Postulacion/Guardar" method="post">
+              <input type="hidden" id="nuevaPostulacion" name="nuevaPostulacion" />
+              <div class="form-row">
+                <div class="col-sm-12 col-md-6">
+                  <label>XML</label>
+                  <div class="custom-file">
+                    <input id="uploadArchivoFirmado" type="file" class="form-control custom-file-input" name="xml" />
+                    <label class="custom-file-label" for="xml">Elegir archivo</label>
+                    <span class="text-danger invalid-feedback field-validation-valid" data-valmsg-for="xml"
+                      data-valmsg-replace="true"></span>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="row justify-content-end">
+                <a id="EnviarArchivoFirmado" href="./2 Pruebas Certificación - Portal Certificacion.htm"
+                  class="btn btn-success btn-rounded" onclick="const f = document.getElementById('uploadArchivoFirmado');
                     if (f == '' || f.files.length == 0) {
                       alert('Debes seleccionar el archivo firmado');
                       return false;
@@ -1053,29 +1031,29 @@
                     }
                     
                     ">
-                    <i class="fas fa-paper-plane fa-fw"></i> Enviar archivo
-                  </a>
-                </div>
-
-                <input name="__RequestVerificationToken" type="hidden"
-                  value="CfDJ8HW6uwko4x9Nvs8khcRhUIZ24AyaW-c8Jk6DuLSgaf3RtR9DNsaLRy0h5Zn7vxGZO8OiG26RYXN1w37IFhYJrzvjMElsD9ipcs7tDQCncjlthO9z7Yk6V0mQ3GbwwBs71AISImZoxiwomLnXcZ3mxenwiQz0FjRoOd7-IbdRGJE7mMMQrhyyXErqY91A_XlExA" />
-              </form>
-            </div>
-          </div>
-          <div class="shadow-sm p-3 mb-5 bg-white rounded">
-            <div id="tblLogs">
-              <div class="container">
-                <span class="h6"><i class="fas fa-database fa-fw"></i> Logs registrados
-                  durante esta etapa del proceso de certificación.</span>
-
-                <hr />
-                <h4>No existen mensajes.</h4>
+                  <i class="fas fa-paper-plane fa-fw"></i> Enviar archivo
+                </a>
               </div>
+
+              <input name="__RequestVerificationToken" type="hidden"
+                value="CfDJ8HW6uwko4x9Nvs8khcRhUIZ24AyaW-c8Jk6DuLSgaf3RtR9DNsaLRy0h5Zn7vxGZO8OiG26RYXN1w37IFhYJrzvjMElsD9ipcs7tDQCncjlthO9z7Yk6V0mQ3GbwwBs71AISImZoxiwomLnXcZ3mxenwiQz0FjRoOd7-IbdRGJE7mMMQrhyyXErqY91A_XlExA" />
+            </form>
+          </div>
+        </div>
+        <div class="shadow-sm p-3 mb-5 bg-white rounded">
+          <div id="tblLogs">
+            <div class="container">
+              <span class="h6"><i class="fas fa-database fa-fw"></i> Logs registrados
+                durante esta etapa del proceso de certificación.</span>
+
+              <hr />
+              <h4>No existen mensajes.</h4>
             </div>
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
+  </div>
   </div>
 
 
