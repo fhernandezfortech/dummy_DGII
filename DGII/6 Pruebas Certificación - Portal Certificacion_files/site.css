@@ -2,248 +2,242 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 main {
-    margin-bottom: 600px;
 }
 
 a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
 }
 
 .menu-link {
-    color: #575451 !important;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    transition: all 0.35s ease-in-out 0s;
+  color: #575451 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  transition: all 0.35s ease-in-out 0s;
 }
 
-    .menu-link:hover {
-        color: #2cb34a !important;
-    }
+.menu-link:hover {
+  color: #2cb34a !important;
+}
 
 .navbar-dropdownlink {
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    transition: all 0.35s ease-in-out 0s;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  transition: all 0.35s ease-in-out 0s;
 }
 
 .btn-rounded {
-    align-items: center;
-    border-radius: 20px;
-    display: -ms-inline-flexbox;
-    font-weight: 700;
-    justify-content: center;
-    text-transform: uppercase;
-    transition: all 0.35s ease-in-out;
+  align-items: center;
+  border-radius: 20px;
+  display: -ms-inline-flexbox;
+  font-weight: 700;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: all 0.35s ease-in-out;
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-
-
-
-
 @media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
 .border-top {
-    border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 
 .border-bottom {
-    border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-    box-shadow: 0 0.25rem 0.2rem rgba(158, 158, 158, 0.15);
+  box-shadow: 0 0.25rem 0.2rem rgba(158, 158, 158, 0.15);
 }
 
 button.accept-policy {
-    font-size: 1rem;
-    line-height: inherit;
+  font-size: 1rem;
+  line-height: inherit;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    /* Set the fixed height of the footer here */
-    min-height: 150px;
-    text-align: center;
-    background-color: #423f3d;
-    color: #fff;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  min-height: 150px;
+  text-align: center;
+  background-color: #423f3d;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-    .footer a {
-        color: #b1b1b1;
-    }
+.footer a {
+  color: #b1b1b1;
+}
 
 .logo-navbar {
-    height: 70px;
-    margin-bottom: 10px;
+  height: 70px;
+  margin-bottom: 10px;
 }
 
 .logo-footer {
-    height: 60px;
-    margin-bottom: 10px;
+  height: 60px;
+  margin-bottom: 10px;
 }
 
 .separator-vertical {
-    display: inline-block;
-    height: 32px;
-    background-color: #635f5c;
-    width: 1px;
-    margin-bottom: -10px;
-    margin-left: 20px;
-    margin-right: 20px;
+  display: inline-block;
+  height: 32px;
+  background-color: #635f5c;
+  width: 1px;
+  margin-bottom: -10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .separator-vertical-small {
-    display: inline-block;
-    height: 15px;
-    margin-bottom: 15px;
-    background-color: #635f5c;
-    width: 1px;
+  display: inline-block;
+  height: 15px;
+  margin-bottom: 15px;
+  background-color: #635f5c;
+  width: 1px;
 }
 
 .logo-rd-footer {
-    height: 50px;
-    margin-bottom: 10px;
+  height: 50px;
+  margin-bottom: 10px;
 }
 
 kbd {
-    background-color: #1c7d32;
-    word-break: break-word;
-    font-size: 0.775rem;
+  background-color: #1c7d32;
+  word-break: break-word;
+  font-size: 0.775rem;
 }
 
 .card-login {
-    max-width: 25rem;
+  max-width: 25rem;
 }
 
 .card-header {
-    background-color: #1e7e34;
-    color: #fff;
+  background-color: #1e7e34;
+  color: #fff;
 }
 
 .clickPointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .logo-footer-container {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .text-footer {
-    white-space: normal;
-    font-size: smaller;
-    color: #cacaca;
+  white-space: normal;
+  font-size: smaller;
+  color: #cacaca;
 }
 
 .smaller-text {
-    font-size: smaller;
+  font-size: smaller;
 }
 
 .rd-goverment-logo {
-    height: 26px;
+  height: 26px;
 }
 
 .top-bar {
-    padding: 5px 30px;
+  padding: 5px 30px;
 }
 
 .top-links-container {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .top-networks-container {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .btn-top-link {
-    font-size: x-small;
-    padding: 7px 10px;
-    font-weight: bolder;
-    font-family: Open Sans, Helvetica, sans-serif;
-    margin-right: 3px;
-    margin-left: 3px;
+  font-size: x-small;
+  padding: 7px 10px;
+  font-weight: bolder;
+  font-family: Open Sans, Helvetica, sans-serif;
+  margin-right: 3px;
+  margin-left: 3px;
 }
 
 .top-network-link {
-    color: #2cb34a;
-    transition: all 0.35s ease-in-out 0s;
-    font-size: 19px;
-    margin-left: 20px;
+  color: #2cb34a;
+  transition: all 0.35s ease-in-out 0s;
+  font-size: 19px;
+  margin-left: 20px;
 }
 
-    .top-network-link:hover {
-        color: #1c7d32;
-    }
+.top-network-link:hover {
+  color: #1c7d32;
+}
 
 #proveedorFields {
-    transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 .statusCards {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .statusNumbers {
-    font-size: x-large;
+  font-size: x-large;
 }
 
 @media (max-width: 1000px) {
-    .top-bar {
-        display: none;
-    }
+  .top-bar {
+    display: none;
+  }
 }
 /*Small devices (landscape phones, 576px and down)*/
 @media (max-width: 576px) {
-    .logo-navbar {
-        height: 50px;
-    }
+  .logo-navbar {
+    height: 50px;
+  }
 
-    .logo-footer {
-        height: 50px;
-    }
+  .logo-footer {
+    height: 50px;
+  }
 
-    .logo-rd-footer {
-        height: 40px;
-    }
+  .logo-rd-footer {
+    height: 40px;
+  }
 }
-
 
 /* -------------------------------------------------------------------------
   Chats styles
@@ -251,64 +245,57 @@ kbd {
 
 /* Chat containers */
 .Chatcontainer {
-    border: 2px solid #dedede;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
 }
 
 /* Darker chat container */
 .Chatdarker {
-    border-color: #ccc;
-    background-color: #ddd;
+  border-color: #ccc;
+  background-color: #ddd;
 }
-
 
 /* Clear floats */
 .Chatcontainer::after {
-    content: "";
-    clear: both;
-    display: table;
-    color: #51801c;
-    font-weight: bold;
-    font-size: medium;
-    background-color: forestgreen;
+  content: "";
+  clear: both;
+  display: table;
+  color: #51801c;
+  font-weight: bold;
+  font-size: medium;
+  background-color: forestgreen;
 }
-
-
 
 /* Style images */
 .Chatcontainer img {
-    float: left;
-    max-width: 150px;
-    width: 100%;
-    margin-right: 20px;
-    border-radius: 50%;
+  float: left;
+  max-width: 150px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
 }
 
-
-
-    /* Style the right image */
-    .Chatcontainer img.right {
-        float: right;
-        margin-left: 20px;
-        margin-right: 0;
-    }
+/* Style the right image */
+.Chatcontainer img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
 
 /* Style time text */
 .Chattime-right {
-    float: right;
-    color: #aaa;
+  float: right;
+  color: #aaa;
 }
-
 
 /* Style time text */
 .Chattime-left {
-    float: left;
-    color: #999;
+  float: left;
+  color: #999;
 }
-
 
 /* -------------------------------------------------------------------------
   VERTICAL STEPPERS
@@ -316,190 +303,188 @@ kbd {
 
 /* Steps */
 .step {
-    position: relative;
-    min-height: 1.0em;
-    color: gray;
+  position: relative;
+  min-height: 1em;
+  color: gray;
 }
 
-    .step + .step {
-        margin-top: 1.1em
-    }
+.step + .step {
+  margin-top: 1.1em;
+}
 
-    .step > div:first-child {
-        position: static;
-        height: 0;
-    }
+.step > div:first-child {
+  position: static;
+  height: 0;
+}
 
-    .step > div:not(:first-child) {
-        margin-left: 1.5em;
-        padding-left: 1em;
-    }
+.step > div:not(:first-child) {
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
 
-    .step.step-active {
-        color: #51801c;
-        font-weight: bold;
-        font-size: medium;
-    }
+.step.step-active {
+  color: #51801c;
+  font-weight: bold;
+  font-size: medium;
+}
 
-        .step.step-active .circle {
-            background-color: forestgreen;
-        }
+.step.step-active .circle {
+  background-color: forestgreen;
+}
 
-        .step.step-active .title {
-            font-weight: bold;
-            font-size: large;
-            font-size: medium;
-        }
+.step.step-active .title {
+  font-weight: bold;
+  font-size: large;
+  font-size: medium;
+}
 
-    .step.step-inactive {
-        color: gray;
-    }
+.step.step-inactive {
+  color: gray;
+}
 
-    .step.step-active .circle {
-        background-color: seagreen;
-    }
+.step.step-active .circle {
+  background-color: seagreen;
+}
 
-    .step.step-done {
-        color: #008000;
-    }
+.step.step-done {
+  color: #008000;
+}
 
-        .step.step-done .circle {
-            background-color: green;
-        }
-
+.step.step-done .circle {
+  background-color: green;
+}
 
 /* Circle */
 .circle {
-    background: gray;
-    position: relative;
-    width: 1.5em;
-    height: 1.5em;
-    line-height: 1.5em;
-    border-radius: 100%;
-    color: #fff;
-    text-align: center;
-    box-shadow: 0 0 0 3px #fff;
+  background: gray;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 0 3px #fff;
 }
 
-    /* Vertical Line */
-    .circle:after {
-        content: ' ';
-        position: absolute;
-        display: block;
-        top: 1px;
-        right: 50%;
-        bottom: 1px;
-        left: 50%;
-        height: 100%;
-        width: 1px;
-        transform: scale(1, 2);
-        transform-origin: 50% -100%;
-        background-color: rgba(0, 0, 0, 0.25);
-        z-index: -1;
-    }
+/* Vertical Line */
+.circle:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  top: 1px;
+  right: 50%;
+  bottom: 1px;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  transform: scale(1, 2);
+  transform-origin: 50% -100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
 
 .step:last-child .circle:after {
-    display: none
+  display: none;
 }
 
 /* Stepper Titles */
 .title {
-    line-height: 1.5em;
-    font-weight: lighter;
-    font-size: small;
+  line-height: 1.5em;
+  font-weight: lighter;
+  font-size: small;
 }
 
 .caption {
-    font-size: 0.8em;
-    margin-top: 4px;
+  font-size: 0.8em;
+  margin-top: 4px;
 }
 
 /*
     Style a, 
 */
 .link-wrapped {
-    white-space: normal !important;
-    word-wrap: break-word;
-    word-break: normal !important;
-    text-align: left;
+  white-space: normal !important;
+  word-wrap: break-word;
+  word-break: normal !important;
+  text-align: left;
 }
 
 .btn-text-wrapped {
-    white-space: normal !important;
-    word-wrap: break-word;
-    word-break: normal !important;
-    text-align: center;
+  white-space: normal !important;
+  word-wrap: break-word;
+  word-break: normal !important;
+  text-align: center;
 }
 
 /* Style utilities messaging inbox
 */
 
 .page-link-portal {
-    color: #1c7d32;
+  color: #1c7d32;
 }
 
 .messagging-hightlight small {
-    color: #1c7d32 !important;
-    font-weight: bold !important;
+  color: #1c7d32 !important;
+  font-weight: bold !important;
 }
 
 .messagging-hightlight p {
-    color: #1c7d32 !important;
-    font-weight: bold !important;
+  color: #1c7d32 !important;
+  font-weight: bold !important;
 }
 
 .messaging-pagination {
-    justify-content: center !important;
+  justify-content: center !important;
 }
 
 /*Forms with file type control*/
 .custom-file {
-    overflow: hidden !important;
+  overflow: hidden !important;
 }
-
 
 /*Media queries for handling button that display certification flow.*/
 
 .eye-cert-flow {
-    float:right;
+  float: right;
 }
 
 .cert-flow {
-    height: 100% !important;
-    display:none;
+  height: 100% !important;
+  display: none;
 }
 
 @media only screen and (min-width: 1140px) {
-    .cert-flow {
-        height: 1037px !important;
-        display: block;
-    }
+  .cert-flow {
+    height: 1037px !important;
+    display: block;
+  }
 }
 
 #loader {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background: rgba(141, 141, 141, 0.65) url(../assets/dgii-spinner.gif) no-repeat center center;
-    z-index: 10000;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(141, 141, 141, 0.65) url(../assets/dgii-spinner.gif)
+    no-repeat center center;
+  z-index: 10000;
 }
 
 .page-item.active .page-link {
-    background-color: #28a745 !important;
+  background-color: #28a745 !important;
 }
 
 p.textoInformativo {
-    color: green !important;
-    font-weight: lighter;
-    font-size: 1rem;
-    text-align: left;
+  color: green !important;
+  font-weight: lighter;
+  font-size: 1rem;
+  text-align: left;
 }
 
 .representacionImpFile {
-    min-height: 5rem;
+  min-height: 5rem;
 }
-
