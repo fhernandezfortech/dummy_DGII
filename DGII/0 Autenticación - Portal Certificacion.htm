@@ -278,7 +278,9 @@
                     required="required" autocomplete="off" />
                 </div>
               </div>
-              <button onclick="location.href=''" class="btn btn-outline-success btn-rounded btn-block" id="btningresar">
+              <button
+                onclick="if (inputUserName.value != '124000000') { alert('Debes usar el RNC 124000000 para los fines de pruebas'); return false; } location.href=''"
+                class="btn btn-outline-success btn-rounded btn-block" id="btningresar">
                 <i class="fas fa-lock fa-fw"></i> Ingresar
               </button>
 
