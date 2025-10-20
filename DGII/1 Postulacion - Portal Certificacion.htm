@@ -981,11 +981,21 @@
                 </div>
 
                 <div class="row justify-content-end">
-                  <a href="./XMLs/202509281140417.xml" download="202509281140417.xml"
+                  <a onclick="
+                  if (ddlTipoDesarrollo.value !=0) { alert('Debes seleccionar externo'); return false; }
+                  else if (inputNombreSoftware.value != 'Adm Cloud') { alert('Debes elegir a Adm Cloud como el software'); return false; }
+                  else if (inputVersionSoftware.value != '1') { alert('Debes elegir la versión 1'); return false; }
+                  else if (inputUrlRecepcion.value != 'api.polarisedi.com/124000000/certecf') { alert('Debes la URL de recepción correcta'); return false; }
+                  else if (inputUrlAprobacionComercial.value != 'api.polarisedi.com/124000000/certecf') { alert('Debes la URL de aprobación comercial correcta'); return false; }
+                  else if (inputUrlAutenticacion.value != '') { alert('URL de autenticación no es necesaria'); return false; }
+                  else if (inputRncProveedor.value != '124005132') { alert('Debes elegir a Fortech como proveedor RNC 124005132'); return false; }
+
+               
+                  " href="./XMLs/202509281140417.xml" download="202509281140417.xml"
                     class="btn btn-success btn-rounded">
                     <i class="fas fa-file-download fa-fw"></i> Generar archivo
                   </a>
-                  <button id="btnGenerarArchivo" type="submit" style="display: none"
+                  <button location.href='' id="btnGenerarArchivo" type="submit" style="display: none"
                     class="btn btn-success btn-rounded">
                     <i class="fas fa-file-download fa-fw"></i> Generar Archivo
                   </button>
