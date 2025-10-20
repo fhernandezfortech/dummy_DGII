@@ -669,7 +669,11 @@
                   </div>
                   <br />
                   <div class="row justify-content-end">
-                    <a href="./6 Pruebas Certificación - Portal Certificacion.htm" class="btn btn-success btn-rounded"
+                    <a onclick="
+                  if (urlAutenticacion.value != '') { alert('URL de autenticación no es necesaria'); return false; }
+                  else if (urlRecepcion.value != 'api.polarisedi.com/124000000/certecf') { alert('Debes la URL de recepción correcta'); return false; }
+                  else if (UrlAprobacionComercial.value != 'api.polarisedi.com/124000000/certecf') { alert('Debes la URL de aprobación comercial correcta'); return false; }
+                  " href="./6 Pruebas Certificación - Portal Certificacion.htm" class="btn btn-success btn-rounded"
                       id="Confirmar">
                       <i class="fas fa-edit fa-fw"></i> Confirmar URLS</a>
                     &nbsp;
